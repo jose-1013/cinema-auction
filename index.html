@@ -134,11 +134,11 @@ main{max-width:1550px;margin:0 auto;padding:32px clamp(20px,3vw,42px) 70px}.view
     <div class="control-card">
       <div class="control-top"><div><h2>🪙 입찰 금액 선택</h2><p>이 작품이 마음에 드는 만큼 코인을 배분하세요.</p></div><div class="balance" id="cashValue">500 <small>코인 잔액</small></div></div>
       <div class="bid-control">
-        <input class="range" id="bidSlider" type="range" min="0" max="500" value="0" step="5" aria-label="현재 영화의 입찰 코인" oninput="changeBid(Number(this.value))">
+        <input class="range" id="bidSlider" type="range" min="0" max="500" value="0" step="50" aria-label="현재 영화의 입찰 코인" oninput="changeBid(Number(this.value))">
         <div class="coin-adjust">
-          <button onclick="changeBid(currentBid()-100)" aria-label="100코인 줄이기">−100</button>
+          <button onclick="changeBid(currentBid()-50)" aria-label="50코인 줄이기">−50</button>
           <strong id="liveBid">0</strong>
-          <button onclick="changeBid(currentBid()+100)" aria-label="100코인 늘리기">+100</button>
+          <button onclick="changeBid(currentBid()+50)" aria-label="50코인 늘리기">+50</button>
           <small>COINS</small>
         </div>
       </div>
