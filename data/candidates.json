@@ -1,0 +1,110 @@
+[
+  {
+    "id": 356,
+    "title": "Forrest Gump (1994)",
+    "genre": "Comedy · Drama · Romance · War",
+    "count": 329
+  },
+  {
+    "id": 318,
+    "title": "Shawshank Redemption, The (1994)",
+    "genre": "Crime · Drama",
+    "count": 317
+  },
+  {
+    "id": 296,
+    "title": "Pulp Fiction (1994)",
+    "genre": "Comedy · Crime · Drama · Thriller",
+    "count": 307
+  },
+  {
+    "id": 593,
+    "title": "Silence of the Lambs, The (1991)",
+    "genre": "Crime · Horror · Thriller",
+    "count": 279
+  },
+  {
+    "id": 2571,
+    "title": "Matrix, The (1999)",
+    "genre": "Action · Sci-Fi · Thriller",
+    "count": 278
+  },
+  {
+    "id": 260,
+    "title": "Star Wars: Episode IV - A New Hope (1977)",
+    "genre": "Action · Adventure · Sci-Fi",
+    "count": 251
+  },
+  {
+    "id": 480,
+    "title": "Jurassic Park (1993)",
+    "genre": "Action · Adventure · Sci-Fi · Thriller",
+    "count": 238
+  },
+  {
+    "id": 110,
+    "title": "Braveheart (1995)",
+    "genre": "Action · Drama · War",
+    "count": 237
+  },
+  {
+    "id": 589,
+    "title": "Terminator 2: Judgment Day (1991)",
+    "genre": "Action · Sci-Fi",
+    "count": 224
+  },
+  {
+    "id": 527,
+    "title": "Schindler's List (1993)",
+    "genre": "Drama · War",
+    "count": 220
+  },
+  {
+    "id": 2959,
+    "title": "Fight Club (1999)",
+    "genre": "Action · Crime · Drama · Thriller",
+    "count": 218
+  },
+  {
+    "id": 1,
+    "title": "Toy Story (1995)",
+    "genre": "Adventure · Animation · Children · Comedy · Fantasy",
+    "count": 215
+  },
+  {
+    "id": 1196,
+    "title": "Star Wars: Episode V - The Empire Strikes Back (1980)",
+    "genre": "Action · Adventure · Sci-Fi",
+    "count": 211
+  },
+  {
+    "id": 50,
+    "title": "Usual Suspects, The (1995)",
+    "genre": "Crime · Mystery · Thriller",
+    "count": 204
+  },
+  {
+    "id": 2858,
+    "title": "American Beauty (1999)",
+    "genre": "Drama · Romance",
+    "count": 204
+  },
+  {
+    "id": 47,
+    "title": "Seven (a.k.a. Se7en) (1995)",
+    "genre": "Mystery · Thriller",
+    "count": 203
+  },
+  {
+    "id": 780,
+    "title": "Independence Day (a.k.a. ID4) (1996)",
+    "genre": "Action · Adventure · Sci-Fi · Thriller",
+    "count": 202
+  },
+  {
+    "id": 150,
+    "title": "Apollo 13 (1995)",
+    "genre": "Adventure · Drama · IMAX",
+    "count": 201
+  }
+]
