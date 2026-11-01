@@ -30,33 +30,50 @@ matrix_dict = {str(uid): {str(mid): float(v) for mid, v in row.items() if v > 0}
 with open('data/ratings_processed.json','w') as f:
     json.dump(matrix_dict, f)
 
-# 3. 온보딩용 후보 풀 생성 — 장르별 다양하게 60편
-candidate_ids = movie_counts[movie_counts >= 80].index  # 기준 완화
-candidates = movies[movies['movieId'].isin(candidate_ids)].copy()
+# 3. 온보딩용 후보 풀 — 인기도 구간별 + 장르별 다양하게
+candidates = movies[movies['movieId'].isin(movie_counts.index)].copy()
 candidates['count'] = candidates['movieId'].map(movie_counts)
-candidates = candidates.sort_values('count', ascending=False)
 
-# 장르별 최대 6편씩, 목표 60편
-genre_bucket = {}
+# 인기도 3구간으로 나누기
+high   = candidates[candidates['count'] >= 200]   # 아주 유명
+mid    = candidates[(candidates['count'] >= 80) & (candidates['count'] < 200)]
+low    = candidates[(candidates['count'] >= 30) & (candidates['count'] < 80)]
+
 result = []
-for _, row in candidates.iterrows():
-    genres = row['genres'].split('|')
-    for g in genres:
-        if genre_bucket.get(g, 0) < 6:
-            genre_bucket[g] = genre_bucket.get(g, 0) + 1
-            result.append({
-                'id': int(row['movieId']),
-                'title': row['title'],
-                'genre': row['genres'].replace('|', ' · '),
-                'count': int(row['count'])
-            })
+seen_ids = set()
+
+def sample_by_genre(pool, max_per_genre, target):
+    genre_bucket = {}
+    picked = []
+    for _, row in pool.sort_values('count', ascending=False).iterrows():
+        if row['movieId'] in seen_ids: continue
+        genres = row['genres'].split('|')
+        for g in genres:
+            if genre_bucket.get(g, 0) < max_per_genre:
+                genre_bucket[g] = genre_bucket.get(g, 0) + 1
+                picked.append({
+                    'id': int(row['movieId']),
+                    'title': row['title'],
+                    'genre': row['genres'].replace('|', ' · '),
+                    'count': int(row['count'])
+                })
+                seen_ids.add(row['movieId'])
+                break
+        if len(picked) >= target:
             break
-    if len(result) >= 60:
-        break
+    return picked
+
+# 구간별 20편씩 → 총 60편
+result += sample_by_genre(high, 3, 20)
+result += sample_by_genre(mid,  3, 20)
+result += sample_by_genre(low,  2, 20)
+
+import random
+random.shuffle(result)
 
 with open('data/candidates.json','w',encoding='utf-8') as f:
     json.dump(result, f, ensure_ascii=False, indent=2)
 
 print(f"✅ movies.json         — {len(movies_json)}편")
 print(f"✅ ratings_processed   — {len(matrix_dict)}명 유저")
-print(f"✅ candidates.json     — {len(result)}편 후보 풀")
+print(f"✅ candidates.json     — {len(result)}편 후보 풀 (상{len([x for x in result if x['count']>=200])}/중/하)")
