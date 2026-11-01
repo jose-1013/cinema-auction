@@ -1,27 +1,33 @@
 [
   {
-    "id": 1573,
-    "title": "Face/Off (1997)",
-    "genre": "Action · Crime · Drama · Thriller",
-    "count": 77
+    "id": 1193,
+    "title": "One Flew Over the Cuckoo's Nest (1975)",
+    "genre": "Drama",
+    "count": 133
   },
   {
-    "id": 91529,
-    "title": "Dark Knight Rises, The (2012)",
-    "genre": "Action · Adventure · Crime · IMAX",
-    "count": 76
+    "id": 81834,
+    "title": "Harry Potter and the Deathly Hallows: Part 1 (2010)",
+    "genre": "Action · Adventure · Fantasy · IMAX",
+    "count": 47
   },
   {
-    "id": 33493,
-    "title": "Star Wars: Episode III - Revenge of the Sith (2005)",
+    "id": 3793,
+    "title": "X-Men (2000)",
     "genre": "Action · Adventure · Sci-Fi",
-    "count": 78
+    "count": 133
   },
   {
-    "id": 590,
-    "title": "Dances with Wolves (1990)",
-    "genre": "Adventure · Drama · Western",
-    "count": 164
+    "id": 2329,
+    "title": "American History X (1998)",
+    "genre": "Crime · Drama",
+    "count": 129
+  },
+  {
+    "id": 4963,
+    "title": "Ocean's Eleven (2001)",
+    "genre": "Crime · Thriller",
+    "count": 119
   },
   {
     "id": 1270,
@@ -30,166 +36,16 @@
     "count": 171
   },
   {
-    "id": 527,
-    "title": "Schindler's List (1993)",
-    "genre": "Drama · War",
-    "count": 220
+    "id": 2716,
+    "title": "Ghostbusters (a.k.a. Ghost Busters) (1984)",
+    "genre": "Action · Comedy · Sci-Fi",
+    "count": 120
   },
   {
-    "id": 46578,
-    "title": "Little Miss Sunshine (2006)",
-    "genre": "Adventure · Comedy · Drama",
-    "count": 77
-  },
-  {
-    "id": 3623,
-    "title": "Mission: Impossible II (2000)",
-    "genre": "Action · Adventure · Thriller",
-    "count": 77
-  },
-  {
-    "id": 2700,
-    "title": "South Park: Bigger, Longer and Uncut (1999)",
-    "genre": "Animation · Comedy · Musical",
-    "count": 76
-  },
-  {
-    "id": 3052,
-    "title": "Dogma (1999)",
-    "genre": "Adventure · Comedy · Fantasy",
-    "count": 79
-  },
-  {
-    "id": 1196,
-    "title": "Star Wars: Episode V - The Empire Strikes Back (1980)",
-    "genre": "Action · Adventure · Sci-Fi",
-    "count": 211
-  },
-  {
-    "id": 2959,
-    "title": "Fight Club (1999)",
-    "genre": "Action · Crime · Drama · Thriller",
-    "count": 218
-  },
-  {
-    "id": 8874,
-    "title": "Shaun of the Dead (2004)",
-    "genre": "Comedy · Horror",
-    "count": 77
-  },
-  {
-    "id": 588,
-    "title": "Aladdin (1992)",
-    "genre": "Adventure · Animation · Children · Comedy · Musical",
-    "count": 183
-  },
-  {
-    "id": 589,
-    "title": "Terminator 2: Judgment Day (1991)",
-    "genre": "Action · Sci-Fi",
-    "count": 224
-  },
-  {
-    "id": 380,
-    "title": "True Lies (1994)",
-    "genre": "Action · Adventure · Comedy · Romance · Thriller",
-    "count": 178
-  },
-  {
-    "id": 3175,
-    "title": "Galaxy Quest (1999)",
-    "genre": "Adventure · Comedy · Sci-Fi",
-    "count": 75
-  },
-  {
-    "id": 6333,
-    "title": "X2: X-Men United (2003)",
-    "genre": "Action · Adventure · Sci-Fi · Thriller",
-    "count": 76
-  },
-  {
-    "id": 47,
-    "title": "Seven (a.k.a. Se7en) (1995)",
-    "genre": "Mystery · Thriller",
-    "count": 203
-  },
-  {
-    "id": 440,
-    "title": "Dave (1993)",
-    "genre": "Comedy · Romance",
-    "count": 76
-  },
-  {
-    "id": 364,
-    "title": "Lion King, The (1994)",
-    "genre": "Adventure · Animation · Children · Drama · Musical · IMAX",
-    "count": 172
-  },
-  {
-    "id": 1625,
-    "title": "Game, The (1997)",
-    "genre": "Drama · Mystery · Thriller",
-    "count": 77
-  },
-  {
-    "id": 457,
-    "title": "Fugitive, The (1993)",
-    "genre": "Thriller",
-    "count": 190
-  },
-  {
-    "id": 110,
-    "title": "Braveheart (1995)",
-    "genre": "Action · Drama · War",
-    "count": 237
-  },
-  {
-    "id": 480,
-    "title": "Jurassic Park (1993)",
-    "genre": "Action · Adventure · Sci-Fi · Thriller",
-    "count": 238
-  },
-  {
-    "id": 2571,
-    "title": "Matrix, The (1999)",
-    "genre": "Action · Sci-Fi · Thriller",
-    "count": 278
-  },
-  {
-    "id": 2762,
-    "title": "Sixth Sense, The (1999)",
-    "genre": "Drama · Horror · Mystery",
-    "count": 179
-  },
-  {
-    "id": 858,
-    "title": "Godfather, The (1972)",
-    "genre": "Crime · Drama",
-    "count": 192
-  },
-  {
-    "id": 6934,
-    "title": "Matrix Revolutions, The (2003)",
-    "genre": "Action · Adventure · Sci-Fi · Thriller · IMAX",
-    "count": 79
-  },
-  {
-    "id": 6016,
-    "title": "City of God (Cidade de Deus) (2002)",
-    "genre": "Action · Adventure · Crime · Drama · Thriller",
-    "count": 75
-  },
-  {
-    "id": 608,
-    "title": "Fargo (1996)",
-    "genre": "Comedy · Crime · Drama · Thriller",
-    "count": 181
-  },
-  {
-    "id": 593,
-    "title": "Silence of the Lambs, The (1991)",
-    "genre": "Crime · Horror · Thriller",
-    "count": 279
+    "id": 1198,
+    "title": "Raiders of the Lost Ark (Indiana Jones and the Raiders of the Lost Ark) (1981)",
+    "genre": "Action · Adventure",
+    "count": 200
   },
   {
     "id": 5952,
@@ -198,94 +54,40 @@
     "count": 188
   },
   {
-    "id": 1247,
-    "title": "Graduate, The (1967)",
-    "genre": "Comedy · Drama · Romance",
-    "count": 79
+    "id": 70,
+    "title": "From Dusk Till Dawn (1996)",
+    "genre": "Action · Comedy · Horror · Thriller",
+    "count": 55
   },
   {
-    "id": 260,
-    "title": "Star Wars: Episode IV - A New Hope (1977)",
-    "genre": "Action · Adventure · Sci-Fi",
-    "count": 251
+    "id": 2959,
+    "title": "Fight Club (1999)",
+    "genre": "Action · Crime · Drama · Thriller",
+    "count": 218
   },
   {
-    "id": 4306,
-    "title": "Shrek (2001)",
-    "genre": "Adventure · Animation · Children · Comedy · Fantasy · Romance",
-    "count": 170
+    "id": 6378,
+    "title": "Italian Job, The (2003)",
+    "genre": "Action · Crime",
+    "count": 59
   },
   {
-    "id": 50,
-    "title": "Usual Suspects, The (1995)",
-    "genre": "Crime · Mystery · Thriller",
-    "count": 204
+    "id": 293,
+    "title": "Léon: The Professional (a.k.a. The Professional) (Léon) (1994)",
+    "genre": "Action · Crime · Drama · Thriller",
+    "count": 133
   },
   {
-    "id": 594,
-    "title": "Snow White and the Seven Dwarfs (1937)",
-    "genre": "Animation · Children · Drama · Fantasy · Musical",
-    "count": 77
+    "id": 1552,
+    "title": "Con Air (1997)",
+    "genre": "Action · Adventure · Thriller",
+    "count": 59
   },
   {
-    "id": 7153,
-    "title": "Lord of the Rings: The Return of the King, The (2003)",
-    "genre": "Action · Adventure · Drama · Fantasy",
-    "count": 185
-  },
-  {
-    "id": 337,
-    "title": "What's Eating Gilbert Grape (1993)",
-    "genre": "Drama",
-    "count": 77
-  },
-  {
-    "id": 318,
-    "title": "Shawshank Redemption, The (1994)",
-    "genre": "Crime · Drama",
-    "count": 317
-  },
-  {
-    "id": 1210,
-    "title": "Star Wars: Episode VI - Return of the Jedi (1983)",
-    "genre": "Action · Adventure · Sci-Fi",
-    "count": 196
-  },
-  {
-    "id": 25,
-    "title": "Leaving Las Vegas (1995)",
-    "genre": "Drama · Romance",
-    "count": 76
-  },
-  {
-    "id": 4993,
-    "title": "Lord of the Rings: The Fellowship of the Ring, The (2001)",
-    "genre": "Adventure · Fantasy",
-    "count": 198
-  },
-  {
-    "id": 1,
-    "title": "Toy Story (1995)",
-    "genre": "Adventure · Animation · Children · Comedy · Fantasy",
-    "count": 215
-  },
-  {
-    "id": 780,
-    "title": "Independence Day (a.k.a. ID4) (1996)",
-    "genre": "Action · Adventure · Sci-Fi · Thriller",
-    "count": 202
-  },
-  {
-    "id": 377,
-    "title": "Speed (1994)",
-    "genre": "Action · Romance · Thriller",
-    "count": 171
-  },
-  {
-    "id": 150,
-    "title": "Apollo 13 (1995)",
-    "genre": "Adventure · Drama · IMAX",
-    "count": 201
+    "id": 1208,
+    "title": "Apocalypse Now (1979)",
+    "genre": "Action · Drama · War",
+    "count": 107
   },
   {
     "id": 2858,
@@ -294,28 +96,16 @@
     "count": 204
   },
   {
-    "id": 1580,
-    "title": "Men in Black (a.k.a. MIB) (1997)",
-    "genre": "Action · Comedy · Sci-Fi",
-    "count": 165
+    "id": 2804,
+    "title": "Christmas Story, A (1983)",
+    "genre": "Children · Comedy",
+    "count": 55
   },
   {
-    "id": 8636,
-    "title": "Spider-Man 2 (2004)",
-    "genre": "Action · Adventure · Sci-Fi · IMAX",
-    "count": 79
-  },
-  {
-    "id": 592,
-    "title": "Batman (1989)",
-    "genre": "Action · Crime · Thriller",
-    "count": 189
-  },
-  {
-    "id": 296,
-    "title": "Pulp Fiction (1994)",
-    "genre": "Comedy · Crime · Drama · Thriller",
-    "count": 307
+    "id": 53125,
+    "title": "Pirates of the Caribbean: At World's End (2007)",
+    "genre": "Action · Adventure · Comedy · Fantasy",
+    "count": 56
   },
   {
     "id": 356,
@@ -324,16 +114,82 @@
     "count": 329
   },
   {
-    "id": 3578,
-    "title": "Gladiator (2000)",
-    "genre": "Action · Adventure · Drama",
+    "id": 165,
+    "title": "Die Hard: With a Vengeance (1995)",
+    "genre": "Action · Crime · Thriller",
+    "count": 144
+  },
+  {
+    "id": 33679,
+    "title": "Mr. & Mrs. Smith (2005)",
+    "genre": "Action · Adventure · Comedy · Romance",
+    "count": 59
+  },
+  {
+    "id": 377,
+    "title": "Speed (1994)",
+    "genre": "Action · Romance · Thriller",
+    "count": 171
+  },
+  {
+    "id": 2005,
+    "title": "Goonies, The (1985)",
+    "genre": "Action · Adventure · Children · Comedy · Fantasy",
+    "count": 57
+  },
+  {
+    "id": 2268,
+    "title": "Few Good Men, A (1992)",
+    "genre": "Crime · Drama · Thriller",
+    "count": 57
+  },
+  {
+    "id": 1,
+    "title": "Toy Story (1995)",
+    "genre": "Adventure · Animation · Children · Comedy · Fantasy",
+    "count": 215
+  },
+  {
+    "id": 539,
+    "title": "Sleepless in Seattle (1993)",
+    "genre": "Comedy · Drama · Romance",
+    "count": 106
+  },
+  {
+    "id": 253,
+    "title": "Interview with the Vampire: The Vampire Chronicles (1994)",
+    "genre": "Drama · Horror",
+    "count": 109
+  },
+  {
+    "id": 7361,
+    "title": "Eternal Sunshine of the Spotless Mind (2004)",
+    "genre": "Drama · Romance · Sci-Fi",
+    "count": 131
+  },
+  {
+    "id": 4306,
+    "title": "Shrek (2001)",
+    "genre": "Adventure · Animation · Children · Comedy · Fantasy · Romance",
     "count": 170
   },
   {
-    "id": 32,
-    "title": "Twelve Monkeys (a.k.a. 12 Monkeys) (1995)",
-    "genre": "Mystery · Sci-Fi · Thriller",
-    "count": 177
+    "id": 908,
+    "title": "North by Northwest (1959)",
+    "genre": "Action · Adventure · Mystery · Romance · Thriller",
+    "count": 57
+  },
+  {
+    "id": 380,
+    "title": "True Lies (1994)",
+    "genre": "Action · Adventure · Comedy · Romance · Thriller",
+    "count": 178
+  },
+  {
+    "id": 110,
+    "title": "Braveheart (1995)",
+    "genre": "Action · Drama · War",
+    "count": 237
   },
   {
     "id": 2028,
@@ -342,9 +198,921 @@
     "count": 188
   },
   {
-    "id": 3751,
-    "title": "Chicken Run (2000)",
-    "genre": "Animation · Children · Comedy",
-    "count": 78
+    "id": 2302,
+    "title": "My Cousin Vinny (1992)",
+    "genre": "Comedy",
+    "count": 59
+  },
+  {
+    "id": 4848,
+    "title": "Mulholland Drive (2001)",
+    "genre": "Crime · Drama · Film-Noir · Mystery · Thriller",
+    "count": 51
+  },
+  {
+    "id": 34,
+    "title": "Babe (1995)",
+    "genre": "Children · Drama",
+    "count": 128
+  },
+  {
+    "id": 588,
+    "title": "Aladdin (1992)",
+    "genre": "Adventure · Animation · Children · Comedy · Musical",
+    "count": 183
+  },
+  {
+    "id": 91500,
+    "title": "The Hunger Games (2012)",
+    "genre": "Action · Adventure · Drama · Sci-Fi · Thriller",
+    "count": 54
+  },
+  {
+    "id": 32,
+    "title": "Twelve Monkeys (a.k.a. 12 Monkeys) (1995)",
+    "genre": "Mystery · Sci-Fi · Thriller",
+    "count": 177
+  },
+  {
+    "id": 153,
+    "title": "Batman Forever (1995)",
+    "genre": "Action · Adventure · Comedy · Crime",
+    "count": 137
+  },
+  {
+    "id": 2762,
+    "title": "Sixth Sense, The (1999)",
+    "genre": "Drama · Horror · Mystery",
+    "count": 179
+  },
+  {
+    "id": 185,
+    "title": "Net, The (1995)",
+    "genre": "Action · Crime · Thriller",
+    "count": 112
+  },
+  {
+    "id": 2167,
+    "title": "Blade (1998)",
+    "genre": "Action · Horror · Thriller",
+    "count": 58
+  },
+  {
+    "id": 39,
+    "title": "Clueless (1995)",
+    "genre": "Comedy · Romance",
+    "count": 104
+  },
+  {
+    "id": 593,
+    "title": "Silence of the Lambs, The (1991)",
+    "genre": "Crime · Horror · Thriller",
+    "count": 279
+  },
+  {
+    "id": 1580,
+    "title": "Men in Black (a.k.a. MIB) (1997)",
+    "genre": "Action · Comedy · Sci-Fi",
+    "count": 165
+  },
+  {
+    "id": 1136,
+    "title": "Monty Python and the Holy Grail (1975)",
+    "genre": "Adventure · Comedy · Fantasy",
+    "count": 136
+  },
+  {
+    "id": 608,
+    "title": "Fargo (1996)",
+    "genre": "Comedy · Crime · Drama · Thriller",
+    "count": 181
+  },
+  {
+    "id": 1203,
+    "title": "12 Angry Men (1957)",
+    "genre": "Drama",
+    "count": 57
+  },
+  {
+    "id": 1206,
+    "title": "Clockwork Orange, A (1971)",
+    "genre": "Crime · Drama · Sci-Fi · Thriller",
+    "count": 120
+  },
+  {
+    "id": 858,
+    "title": "Godfather, The (1972)",
+    "genre": "Crime · Drama",
+    "count": 192
+  },
+  {
+    "id": 4896,
+    "title": "Harry Potter and the Sorcerer's Stone (a.k.a. Harry Potter and the Philosopher's Stone) (2001)",
+    "genre": "Adventure · Children · Fantasy",
+    "count": 107
+  },
+  {
+    "id": 1213,
+    "title": "Goodfellas (1990)",
+    "genre": "Crime · Drama",
+    "count": 126
+  },
+  {
+    "id": 5991,
+    "title": "Chicago (2002)",
+    "genre": "Comedy · Crime · Drama · Musical",
+    "count": 49
+  },
+  {
+    "id": 2470,
+    "title": "Crocodile Dundee (1986)",
+    "genre": "Adventure · Comedy",
+    "count": 57
+  },
+  {
+    "id": 913,
+    "title": "Maltese Falcon, The (1941)",
+    "genre": "Film-Noir · Mystery",
+    "count": 44
+  },
+  {
+    "id": 3033,
+    "title": "Spaceballs (1987)",
+    "genre": "Comedy · Sci-Fi",
+    "count": 59
+  },
+  {
+    "id": 1291,
+    "title": "Indiana Jones and the Last Crusade (1989)",
+    "genre": "Action · Adventure",
+    "count": 140
+  },
+  {
+    "id": 78499,
+    "title": "Toy Story 3 (2010)",
+    "genre": "Adventure · Animation · Children · Comedy · Fantasy · IMAX",
+    "count": 55
+  },
+  {
+    "id": 4878,
+    "title": "Donnie Darko (2001)",
+    "genre": "Drama · Mystery · Sci-Fi · Thriller",
+    "count": 109
+  },
+  {
+    "id": 2529,
+    "title": "Planet of the Apes (1968)",
+    "genre": "Action · Drama · Sci-Fi",
+    "count": 56
+  },
+  {
+    "id": 1196,
+    "title": "Star Wars: Episode V - The Empire Strikes Back (1980)",
+    "genre": "Action · Adventure · Sci-Fi",
+    "count": 211
+  },
+  {
+    "id": 80463,
+    "title": "Social Network, The (2010)",
+    "genre": "Drama",
+    "count": 57
+  },
+  {
+    "id": 6539,
+    "title": "Pirates of the Caribbean: The Curse of the Black Pearl (2003)",
+    "genre": "Action · Adventure · Comedy · Fantasy",
+    "count": 149
+  },
+  {
+    "id": 589,
+    "title": "Terminator 2: Judgment Day (1991)",
+    "genre": "Action · Sci-Fi",
+    "count": 224
+  },
+  {
+    "id": 8961,
+    "title": "Incredibles, The (2004)",
+    "genre": "Action · Adventure · Animation · Children · Comedy",
+    "count": 125
+  },
+  {
+    "id": 2628,
+    "title": "Star Wars: Episode I - The Phantom Menace (1999)",
+    "genre": "Action · Adventure · Sci-Fi",
+    "count": 140
+  },
+  {
+    "id": 1527,
+    "title": "Fifth Element, The (1997)",
+    "genre": "Action · Adventure · Comedy · Sci-Fi",
+    "count": 116
+  },
+  {
+    "id": 59784,
+    "title": "Kung Fu Panda (2008)",
+    "genre": "Action · Animation · Children · Comedy · IMAX",
+    "count": 54
+  },
+  {
+    "id": 4995,
+    "title": "Beautiful Mind, A (2001)",
+    "genre": "Drama · Romance",
+    "count": 123
+  },
+  {
+    "id": 592,
+    "title": "Batman (1989)",
+    "genre": "Action · Crime · Thriller",
+    "count": 189
+  },
+  {
+    "id": 68954,
+    "title": "Up (2009)",
+    "genre": "Adventure · Animation · Children · Drama",
+    "count": 105
+  },
+  {
+    "id": 1608,
+    "title": "Air Force One (1997)",
+    "genre": "Action · Thriller",
+    "count": 58
+  },
+  {
+    "id": 1221,
+    "title": "Godfather: Part II, The (1974)",
+    "genre": "Crime · Drama",
+    "count": 129
+  },
+  {
+    "id": 260,
+    "title": "Star Wars: Episode IV - A New Hope (1977)",
+    "genre": "Action · Adventure · Sci-Fi",
+    "count": 251
+  },
+  {
+    "id": 1036,
+    "title": "Die Hard (1988)",
+    "genre": "Action · Crime · Thriller",
+    "count": 145
+  },
+  {
+    "id": 1200,
+    "title": "Aliens (1986)",
+    "genre": "Action · Adventure · Horror · Sci-Fi",
+    "count": 126
+  },
+  {
+    "id": 4993,
+    "title": "Lord of the Rings: The Fellowship of the Ring, The (2001)",
+    "genre": "Adventure · Fantasy",
+    "count": 198
+  },
+  {
+    "id": 5669,
+    "title": "Bowling for Columbine (2002)",
+    "genre": "Documentary",
+    "count": 58
+  },
+  {
+    "id": 7438,
+    "title": "Kill Bill: Vol. 2 (2004)",
+    "genre": "Action · Drama · Thriller",
+    "count": 110
+  },
+  {
+    "id": 1240,
+    "title": "Terminator, The (1984)",
+    "genre": "Action · Sci-Fi · Thriller",
+    "count": 131
+  },
+  {
+    "id": 47,
+    "title": "Seven (a.k.a. Se7en) (1995)",
+    "genre": "Mystery · Thriller",
+    "count": 203
+  },
+  {
+    "id": 953,
+    "title": "It's a Wonderful Life (1946)",
+    "genre": "Children · Drama · Fantasy · Romance",
+    "count": 58
+  },
+  {
+    "id": 4973,
+    "title": "Amelie (Fabuleux destin d'Amélie Poulain, Le) (2001)",
+    "genre": "Comedy · Romance",
+    "count": 120
+  },
+  {
+    "id": 54001,
+    "title": "Harry Potter and the Order of the Phoenix (2007)",
+    "genre": "Adventure · Drama · Fantasy · IMAX",
+    "count": 58
+  },
+  {
+    "id": 8622,
+    "title": "Fahrenheit 9/11 (2004)",
+    "genre": "Documentary",
+    "count": 37
+  },
+  {
+    "id": 58559,
+    "title": "Dark Knight, The (2008)",
+    "genre": "Action · Crime · Drama · IMAX",
+    "count": 149
+  },
+  {
+    "id": 597,
+    "title": "Pretty Woman (1990)",
+    "genre": "Comedy · Romance",
+    "count": 135
+  },
+  {
+    "id": 81845,
+    "title": "King's Speech, The (2010)",
+    "genre": "Drama",
+    "count": 58
+  },
+  {
+    "id": 3624,
+    "title": "Shanghai Noon (2000)",
+    "genre": "Action · Adventure · Comedy · Western",
+    "count": 43
+  },
+  {
+    "id": 2683,
+    "title": "Austin Powers: The Spy Who Shagged Me (1999)",
+    "genre": "Action · Adventure · Comedy",
+    "count": 121
+  },
+  {
+    "id": 5445,
+    "title": "Minority Report (2002)",
+    "genre": "Action · Crime · Mystery · Sci-Fi · Thriller",
+    "count": 120
+  },
+  {
+    "id": 780,
+    "title": "Independence Day (a.k.a. ID4) (1996)",
+    "genre": "Action · Adventure · Sci-Fi · Thriller",
+    "count": 202
+  },
+  {
+    "id": 432,
+    "title": "City Slickers II: The Legend of Curly's Gold (1994)",
+    "genre": "Adventure · Comedy · Western",
+    "count": 55
+  },
+  {
+    "id": 661,
+    "title": "James and the Giant Peach (1996)",
+    "genre": "Adventure · Animation · Children · Fantasy · Musical",
+    "count": 49
+  },
+  {
+    "id": 4720,
+    "title": "Others, The (2001)",
+    "genre": "Drama · Horror · Mystery · Thriller",
+    "count": 55
+  },
+  {
+    "id": 34162,
+    "title": "Wedding Crashers (2005)",
+    "genre": "Comedy · Romance",
+    "count": 58
+  },
+  {
+    "id": 5349,
+    "title": "Spider-Man (2002)",
+    "genre": "Action · Adventure · Sci-Fi · Thriller",
+    "count": 122
+  },
+  {
+    "id": 30749,
+    "title": "Hotel Rwanda (2004)",
+    "genre": "Drama · War",
+    "count": 48
+  },
+  {
+    "id": 68358,
+    "title": "Star Trek (2009)",
+    "genre": "Action · Adventure · Sci-Fi · IMAX",
+    "count": 59
+  },
+  {
+    "id": 3578,
+    "title": "Gladiator (2000)",
+    "genre": "Action · Adventure · Drama",
+    "count": 170
+  },
+  {
+    "id": 708,
+    "title": "Truth About Cats & Dogs, The (1996)",
+    "genre": "Comedy · Romance",
+    "count": 58
+  },
+  {
+    "id": 1097,
+    "title": "E.T. the Extra-Terrestrial (1982)",
+    "genre": "Children · Drama · Sci-Fi",
+    "count": 122
+  },
+  {
+    "id": 1500,
+    "title": "Grosse Pointe Blank (1997)",
+    "genre": "Comedy · Crime · Romance",
+    "count": 59
+  },
+  {
+    "id": 1214,
+    "title": "Alien (1979)",
+    "genre": "Horror · Sci-Fi",
+    "count": 146
+  },
+  {
+    "id": 2701,
+    "title": "Wild Wild West (1999)",
+    "genre": "Action · Comedy · Sci-Fi · Western",
+    "count": 53
+  },
+  {
+    "id": 2078,
+    "title": "Jungle Book, The (1967)",
+    "genre": "Animation · Children · Comedy · Musical",
+    "count": 53
+  },
+  {
+    "id": 33794,
+    "title": "Batman Begins (2005)",
+    "genre": "Action · Crime · IMAX",
+    "count": 116
+  },
+  {
+    "id": 648,
+    "title": "Mission: Impossible (1996)",
+    "genre": "Action · Adventure · Mystery · Thriller",
+    "count": 162
+  },
+  {
+    "id": 150,
+    "title": "Apollo 13 (1995)",
+    "genre": "Adventure · Drama · IMAX",
+    "count": 201
+  },
+  {
+    "id": 8464,
+    "title": "Super Size Me (2004)",
+    "genre": "Comedy · Documentary · Drama",
+    "count": 50
+  },
+  {
+    "id": 1089,
+    "title": "Reservoir Dogs (1992)",
+    "genre": "Crime · Mystery · Thriller",
+    "count": 131
+  },
+  {
+    "id": 6942,
+    "title": "Love Actually (2003)",
+    "genre": "Comedy · Drama · Romance",
+    "count": 59
+  },
+  {
+    "id": 457,
+    "title": "Fugitive, The (1993)",
+    "genre": "Thriller",
+    "count": 190
+  },
+  {
+    "id": 73017,
+    "title": "Sherlock Holmes (2009)",
+    "genre": "Action · Crime · Mystery · Thriller",
+    "count": 58
+  },
+  {
+    "id": 1266,
+    "title": "Unforgiven (1992)",
+    "genre": "Drama · Western",
+    "count": 45
+  },
+  {
+    "id": 420,
+    "title": "Beverly Hills Cop III (1994)",
+    "genre": "Action · Comedy · Crime · Thriller",
+    "count": 59
+  },
+  {
+    "id": 76093,
+    "title": "How to Train Your Dragon (2010)",
+    "genre": "Adventure · Animation · Children · Fantasy · IMAX",
+    "count": 53
+  },
+  {
+    "id": 673,
+    "title": "Space Jam (1996)",
+    "genre": "Adventure · Animation · Children · Comedy · Fantasy · Sci-Fi",
+    "count": 53
+  },
+  {
+    "id": 10,
+    "title": "GoldenEye (1995)",
+    "genre": "Action · Adventure · Thriller",
+    "count": 132
+  },
+  {
+    "id": 5418,
+    "title": "Bourne Identity, The (2002)",
+    "genre": "Action · Mystery · Thriller",
+    "count": 112
+  },
+  {
+    "id": 1210,
+    "title": "Star Wars: Episode VI - Return of the Jedi (1983)",
+    "genre": "Action · Adventure · Sci-Fi",
+    "count": 196
+  },
+  {
+    "id": 733,
+    "title": "Rock, The (1996)",
+    "genre": "Action · Adventure · Thriller",
+    "count": 121
+  },
+  {
+    "id": 5010,
+    "title": "Black Hawk Down (2001)",
+    "genre": "Action · Drama · War",
+    "count": 50
+  },
+  {
+    "id": 2115,
+    "title": "Indiana Jones and the Temple of Doom (1984)",
+    "genre": "Action · Adventure · Fantasy",
+    "count": 108
+  },
+  {
+    "id": 586,
+    "title": "Home Alone (1990)",
+    "genre": "Children · Comedy",
+    "count": 116
+  },
+  {
+    "id": 1748,
+    "title": "Dark City (1998)",
+    "genre": "Adventure · Film-Noir · Sci-Fi · Thriller",
+    "count": 48
+  },
+  {
+    "id": 4308,
+    "title": "Moulin Rouge (2001)",
+    "genre": "Drama · Musical · Romance",
+    "count": 55
+  },
+  {
+    "id": 296,
+    "title": "Pulp Fiction (1994)",
+    "genre": "Comedy · Crime · Drama · Thriller",
+    "count": 307
+  },
+  {
+    "id": 6502,
+    "title": "28 Days Later (2002)",
+    "genre": "Action · Horror · Sci-Fi",
+    "count": 58
+  },
+  {
+    "id": 590,
+    "title": "Dances with Wolves (1990)",
+    "genre": "Adventure · Drama · Western",
+    "count": 164
+  },
+  {
+    "id": 1230,
+    "title": "Annie Hall (1977)",
+    "genre": "Comedy · Romance",
+    "count": 58
+  },
+  {
+    "id": 1148,
+    "title": "Wallace & Gromit: The Wrong Trousers (1993)",
+    "genre": "Animation · Children · Comedy · Crime",
+    "count": 56
+  },
+  {
+    "id": 1282,
+    "title": "Fantasia (1940)",
+    "genre": "Animation · Children · Fantasy · Musical",
+    "count": 53
+  },
+  {
+    "id": 1721,
+    "title": "Titanic (1997)",
+    "genre": "Drama · Romance",
+    "count": 140
+  },
+  {
+    "id": 116797,
+    "title": "The Imitation Game (2014)",
+    "genre": "Drama · Thriller · War",
+    "count": 50
+  },
+  {
+    "id": 2,
+    "title": "Jumanji (1995)",
+    "genre": "Adventure · Children · Fantasy",
+    "count": 110
+  },
+  {
+    "id": 69844,
+    "title": "Harry Potter and the Half-Blood Prince (2009)",
+    "genre": "Adventure · Fantasy · Mystery · Romance · IMAX",
+    "count": 58
+  },
+  {
+    "id": 1073,
+    "title": "Willy Wonka & the Chocolate Factory (1971)",
+    "genre": "Children · Comedy · Fantasy · Musical",
+    "count": 119
+  },
+  {
+    "id": 49530,
+    "title": "Blood Diamond (2006)",
+    "genre": "Action · Adventure · Crime · Drama · Thriller · War",
+    "count": 53
+  },
+  {
+    "id": 231,
+    "title": "Dumb & Dumber (Dumb and Dumber) (1994)",
+    "genre": "Adventure · Comedy",
+    "count": 133
+  },
+  {
+    "id": 318,
+    "title": "Shawshank Redemption, The (1994)",
+    "genre": "Crime · Drama",
+    "count": 317
+  },
+  {
+    "id": 1207,
+    "title": "To Kill a Mockingbird (1962)",
+    "genre": "Drama",
+    "count": 58
+  },
+  {
+    "id": 88129,
+    "title": "Drive (2011)",
+    "genre": "Crime · Drama · Film-Noir · Thriller",
+    "count": 32
+  },
+  {
+    "id": 1258,
+    "title": "Shining, The (1980)",
+    "genre": "Horror",
+    "count": 109
+  },
+  {
+    "id": 587,
+    "title": "Ghost (1990)",
+    "genre": "Comedy · Drama · Fantasy · Romance · Thriller",
+    "count": 115
+  },
+  {
+    "id": 112852,
+    "title": "Guardians of the Galaxy (2014)",
+    "genre": "Action · Adventure · Sci-Fi",
+    "count": 59
+  },
+  {
+    "id": 2080,
+    "title": "Lady and the Tramp (1955)",
+    "genre": "Animation · Children · Comedy · Romance",
+    "count": 55
+  },
+  {
+    "id": 2671,
+    "title": "Notting Hill (1999)",
+    "genre": "Comedy · Romance",
+    "count": 56
+  },
+  {
+    "id": 2064,
+    "title": "Roger & Me (1989)",
+    "genre": "Documentary",
+    "count": 31
+  },
+  {
+    "id": 1682,
+    "title": "Truman Show, The (1998)",
+    "genre": "Comedy · Drama · Sci-Fi",
+    "count": 125
+  },
+  {
+    "id": 1197,
+    "title": "Princess Bride, The (1987)",
+    "genre": "Action · Adventure · Comedy · Fantasy · Romance",
+    "count": 142
+  },
+  {
+    "id": 60069,
+    "title": "WALL·E (2008)",
+    "genre": "Adventure · Animation · Children · Romance · Sci-Fi",
+    "count": 104
+  },
+  {
+    "id": 2571,
+    "title": "Matrix, The (1999)",
+    "genre": "Action · Sci-Fi · Thriller",
+    "count": 278
+  },
+  {
+    "id": 316,
+    "title": "Stargate (1994)",
+    "genre": "Action · Adventure · Sci-Fi",
+    "count": 140
+  },
+  {
+    "id": 7153,
+    "title": "Lord of the Rings: The Return of the King, The (2003)",
+    "genre": "Action · Adventure · Drama · Fantasy",
+    "count": 185
+  },
+  {
+    "id": 6874,
+    "title": "Kill Bill: Vol. 1 (2003)",
+    "genre": "Action · Crime · Thriller",
+    "count": 131
+  },
+  {
+    "id": 1704,
+    "title": "Good Will Hunting (1997)",
+    "genre": "Drama · Romance",
+    "count": 141
+  },
+  {
+    "id": 1265,
+    "title": "Groundhog Day (1993)",
+    "genre": "Comedy · Fantasy · Romance",
+    "count": 143
+  },
+  {
+    "id": 79132,
+    "title": "Inception (2010)",
+    "genre": "Action · Crime · Drama · Mystery · Sci-Fi · Thriller · IMAX",
+    "count": 143
+  },
+  {
+    "id": 7458,
+    "title": "Troy (2004)",
+    "genre": "Action · Adventure · Drama · War",
+    "count": 48
+  },
+  {
+    "id": 1302,
+    "title": "Field of Dreams (1989)",
+    "genre": "Children · Drama · Fantasy",
+    "count": 56
+  },
+  {
+    "id": 50,
+    "title": "Usual Suspects, The (1995)",
+    "genre": "Crime · Mystery · Thriller",
+    "count": 204
+  },
+  {
+    "id": 527,
+    "title": "Schindler's List (1993)",
+    "genre": "Drama · War",
+    "count": 220
+  },
+  {
+    "id": 500,
+    "title": "Mrs. Doubtfire (1993)",
+    "genre": "Comedy · Drama",
+    "count": 144
+  },
+  {
+    "id": 541,
+    "title": "Blade Runner (1982)",
+    "genre": "Action · Sci-Fi · Thriller",
+    "count": 124
+  },
+  {
+    "id": 364,
+    "title": "Lion King, The (1994)",
+    "genre": "Adventure · Animation · Children · Drama · Musical · IMAX",
+    "count": 172
+  },
+  {
+    "id": 3996,
+    "title": "Crouching Tiger, Hidden Dragon (Wo hu cang long) (2000)",
+    "genre": "Action · Drama · Romance",
+    "count": 110
+  },
+  {
+    "id": 1252,
+    "title": "Chinatown (1974)",
+    "genre": "Crime · Film-Noir · Mystery · Thriller",
+    "count": 59
+  },
+  {
+    "id": 96079,
+    "title": "Skyfall (2012)",
+    "genre": "Action · Adventure · Thriller · IMAX",
+    "count": 50
+  },
+  {
+    "id": 3489,
+    "title": "Hook (1991)",
+    "genre": "Adventure · Comedy · Fantasy",
+    "count": 53
+  },
+  {
+    "id": 736,
+    "title": "Twister (1996)",
+    "genre": "Action · Adventure · Romance · Thriller",
+    "count": 123
+  },
+  {
+    "id": 595,
+    "title": "Beauty and the Beast (1991)",
+    "genre": "Animation · Children · Fantasy · Musical · Romance · IMAX",
+    "count": 146
+  },
+  {
+    "id": 4370,
+    "title": "A.I. Artificial Intelligence (2001)",
+    "genre": "Adventure · Drama · Sci-Fi",
+    "count": 56
+  },
+  {
+    "id": 160,
+    "title": "Congo (1995)",
+    "genre": "Action · Adventure · Mystery · Sci-Fi",
+    "count": 57
+  },
+  {
+    "id": 349,
+    "title": "Clear and Present Danger (1994)",
+    "genre": "Action · Crime · Drama · Thriller",
+    "count": 110
+  },
+  {
+    "id": 480,
+    "title": "Jurassic Park (1993)",
+    "genre": "Action · Adventure · Sci-Fi · Thriller",
+    "count": 238
+  },
+  {
+    "id": 784,
+    "title": "Cable Guy, The (1996)",
+    "genre": "Comedy · Thriller",
+    "count": 54
+  },
+  {
+    "id": 3535,
+    "title": "American Psycho (2000)",
+    "genre": "Crime · Horror · Mystery · Thriller",
+    "count": 59
+  },
+  {
+    "id": 4886,
+    "title": "Monsters, Inc. (2001)",
+    "genre": "Adventure · Animation · Children · Comedy · Fantasy",
+    "count": 132
+  },
+  {
+    "id": 350,
+    "title": "Client, The (1994)",
+    "genre": "Drama · Mystery · Thriller",
+    "count": 57
+  },
+  {
+    "id": 1923,
+    "title": "There's Something About Mary (1998)",
+    "genre": "Comedy · Romance",
+    "count": 105
+  },
+  {
+    "id": 6377,
+    "title": "Finding Nemo (2003)",
+    "genre": "Adventure · Animation · Children · Comedy",
+    "count": 141
+  },
+  {
+    "id": 122904,
+    "title": "Deadpool (2016)",
+    "genre": "Action · Adventure · Comedy · Sci-Fi",
+    "count": 54
+  },
+  {
+    "id": 88125,
+    "title": "Harry Potter and the Deathly Hallows: Part 2 (2011)",
+    "genre": "Action · Adventure · Drama · Fantasy · Mystery · IMAX",
+    "count": 50
+  },
+  {
+    "id": 1199,
+    "title": "Brazil (1985)",
+    "genre": "Fantasy · Sci-Fi",
+    "count": 59
   }
 ]

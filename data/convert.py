@@ -1,6 +1,6 @@
 import pandas as pd
 import json
-import os
+import random
 
 base = 'data/ml-latest-small'
 
@@ -17,12 +17,10 @@ with open('data/movies.json','w',encoding='utf-8') as f:
     json.dump(movies_json, f, ensure_ascii=False, indent=2)
 
 # 2. ratings_processed.json — 유저×영화 평점 행렬 (Item-CF용)
-# 평가 수 50개 이상인 영화만 사용
 movie_counts = ratings.groupby('movieId')['rating'].count()
 popular_ids  = movie_counts[movie_counts >= 50].index
 ratings_filtered = ratings[ratings['movieId'].isin(popular_ids)]
 
-# pivot → dict of dict
 matrix = ratings_filtered.pivot_table(index='userId', columns='movieId', values='rating').fillna(0)
 matrix_dict = {str(uid): {str(mid): float(v) for mid, v in row.items() if v > 0}
                for uid, row in matrix.iterrows()}
@@ -30,16 +28,15 @@ matrix_dict = {str(uid): {str(mid): float(v) for mid, v in row.items() if v > 0}
 with open('data/ratings_processed.json','w') as f:
     json.dump(matrix_dict, f)
 
-# 3. 온보딩용 후보 풀 — 인기도 구간별 + 장르별 다양하게
+# 3. 온보딩용 후보 풀 — 100편
 candidates = movies[movies['movieId'].isin(movie_counts.index)].copy()
 candidates['count'] = candidates['movieId'].map(movie_counts)
 
-# 인기도 3구간으로 나누기
-high   = candidates[candidates['count'] >= 200]   # 아주 유명
-mid    = candidates[(candidates['count'] >= 80) & (candidates['count'] < 200)]
-low    = candidates[(candidates['count'] >= 30) & (candidates['count'] < 80)]
+high = candidates[candidates['count'] >= 150]
+mid  = candidates[(candidates['count'] >= 60) & (candidates['count'] < 150)]
+low  = candidates[(candidates['count'] >= 25) & (candidates['count'] < 60)]
 
-result = []
+result   = []
 seen_ids = set()
 
 def sample_by_genre(pool, max_per_genre, target):
@@ -63,17 +60,19 @@ def sample_by_genre(pool, max_per_genre, target):
             break
     return picked
 
-# 구간별 20편씩 → 총 60편
-result += sample_by_genre(high, 3, 20)
-result += sample_by_genre(mid,  3, 20)
-result += sample_by_genre(low,  2, 20)
+result += sample_by_genre(high, 8, 40)
+result += sample_by_genre(mid,  6, 70)
+result += sample_by_genre(low,  4, 100)
 
-import random
 random.shuffle(result)
 
 with open('data/candidates.json','w',encoding='utf-8') as f:
     json.dump(result, f, ensure_ascii=False, indent=2)
 
+n_high = len([x for x in result if x['count'] >= 150])
+n_mid  = len([x for x in result if 60 <= x['count'] < 150])
+n_low  = len([x for x in result if x['count'] < 60])
+
 print(f"✅ movies.json         — {len(movies_json)}편")
 print(f"✅ ratings_processed   — {len(matrix_dict)}명 유저")
-print(f"✅ candidates.json     — {len(result)}편 후보 풀 (상{len([x for x in result if x['count']>=200])}/중/하)")
+print(f"✅ candidates.json     — {len(result)}편 후보 풀 (상{n_high}/중{n_mid}/하{n_low})")

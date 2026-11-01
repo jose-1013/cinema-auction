@@ -14,19 +14,27 @@ header{height:76px;position:sticky;top:0;z-index:80;display:flex;align-items:cen
 /* Canvas */
 main{max-width:1550px;margin:0 auto;padding:32px clamp(20px,3vw,42px) 70px}.view{display:none;animation:enter .25s ease}.view.show{display:block}@keyframes enter{from{opacity:.2;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin:5px 0 26px}.section-head h1{font-size:clamp(28px,2.5vw,38px);font-weight:900;line-height:1.35;margin-top:7px}.section-head p{font-size:13px;color:var(--muted);margin-top:7px}.surface{background:linear-gradient(140deg,#1d1626,#15111c);border:1px solid #4b384f;border-radius:var(--radius);box-shadow:var(--shadow)}.footer-actions{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-top:27px;padding-top:24px;border-top:1px solid #ffffff17}.footer-actions small{color:#ab99ad;line-height:1.7}
 /* Home theater */
-.welcome{min-height:720px;display:grid;grid-template-columns:46% 54%;border:1px solid #624956;border-radius:22px;overflow:hidden;position:relative;background:radial-gradient(circle at 79% 21%,#58335261,transparent 38%),linear-gradient(115deg,#211523,#0c0b12 74%)}.welcome:before{content:"";position:absolute;left:-80px;bottom:-95px;width:430px;height:320px;border-radius:50%;background:#572b4640;filter:blur(80px)}.welcome-copy{padding:90px 6% 62px 11%;z-index:1;display:flex;flex-direction:column;align-items:start}.welcome-copy h1{font-family:Georgia,'Noto Sans KR',serif;font-size:clamp(48px,5vw,77px);line-height:1.09;letter-spacing:-.045em;margin-top:21px}.welcome-copy h1 em{font-style:normal;color:var(--gold)}.welcome-copy .subtitle{margin-top:20px;font-size:21px;font-weight:800}.welcome-copy p{max-width:420px;color:#c5b6c3;font-size:14px;line-height:2;margin-top:17px}.welcome-copy .btn{margin-top:35px;min-width:205px}.welcome-bottom{display:flex;gap:28px;align-items:center;margin-top:auto;padding-top:40px}.welcome-stat{border-left:1px solid #735a53;padding-left:16px}.welcome-stat strong{display:block;color:#f8d9a7;font-size:22px}.welcome-stat span{font-size:11px;color:#a89aa9}.theater-home{position:relative;overflow:hidden;min-height:720px;background:radial-gradient(ellipse at 50% 76%,#9a613147,transparent 40%),linear-gradient(90deg,#190d19,#291022 25%,#150f1a 55%,#3a1526 88%,#1d0b18)}.theater-home:before,.stage-view:before{content:"";position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(90deg,#ffffff00 0 65px,#00000017 72px 91px,#ffffff09 97px 104px);opacity:.52}.theater-home:after{content:"";position:absolute;left:-5%;right:-5%;bottom:0;height:95px;background:linear-gradient(0deg,#100b11,#24151d);border-top:3px solid #7f5535}.theater-halo{position:absolute;left:50%;top:7%;transform:translateX(-50%);width:560px;height:520px;background:radial-gradient(ellipse,#ecbc7162,transparent 68%);filter:blur(23px)}.theater-filigree{position:absolute;top:30px;left:12%;right:12%;text-align:center;font-family:Georgia,serif;font-size:15px;letter-spacing:.28em;color:#ead5ad;opacity:.75}.welcome-figure{position:absolute;width:min(68%,450px);left:50%;bottom:37px;transform:translateX(-50%);z-index:5;filter:drop-shadow(0 28px 36px #050306ba)}.theater-label{position:absolute;top:20%;left:10%;z-index:6;padding:13px 16px;background:#1b1017d9;border:1px solid #8f6349;border-radius:9px;color:#ead6b6;font-size:11px;letter-spacing:.1em}.theater-tickets{position:absolute;right:7%;bottom:20%;z-index:7;background:#261822e8;border:1px solid #b18355;border-radius:8px;padding:17px 19px;transform:rotate(6deg);box-shadow:0 18px 35px #0008}.theater-tickets b{font:700 20px Georgia,serif;color:#f5d394}.theater-tickets small{display:block;font-size:10px;color:#e0c8bd;margin-top:6px}
+.welcome{min-height:720px;display:grid;grid-template-columns:46% 54%;border:1px solid #624956;border-radius:22px;overflow:hidden;position:relative;background:radial-gradient(circle at 79% 21%,#58335261,transparent 38%),linear-gradient(115deg,#211523,#0c0b12 74%)}.welcome:before{content:"";position:absolute;left:-80px;bottom:-95px;width:430px;height:320px;border-radius:50%;background:#572b4640;filter:blur(80px)}.welcome-copy{padding:90px 6% 62px 11%;z-index:1;display:flex;flex-direction:column;align-items:start}.welcome-copy h1{font-family:Georgia,'Noto Sans KR',serif;font-size:clamp(48px,5vw,77px);line-height:1.09;letter-spacing:-.045em;margin-top:21px}.welcome-copy h1 em{font-style:normal;color:var(--gold)}.welcome-copy .subtitle{margin-top:20px;font-size:21px;font-weight:800}.welcome-copy p{max-width:420px;color:#c5b6c3;font-size:14px;line-height:2;margin-top:17px}.welcome-copy .btn{margin-top:35px;min-width:205px}.welcome-bottom{display:flex;gap:28px;align-items:center;margin-top:auto;padding-top:40px}.welcome-stat{border-left:1px solid #735a53;padding-left:16px}.welcome-stat strong{display:block;color:#f8d9a7;font-size:22px}.welcome-stat span{font-size:11px;color:#a89aa9}.theater-home{position:relative;overflow:hidden;min-height:720px;background:radial-gradient(ellipse at 50% 76%,#9a613147,transparent 40%),linear-gradient(90deg,#190d19,#291022 25%,#150f1a 55%,#3a1526 88%,#1d0b18)}.theater-home:before,.stage-clip:before{content:"";position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(90deg,#ffffff00 0 65px,#00000017 72px 91px,#ffffff09 97px 104px);opacity:.52}.theater-home:after{content:"";position:absolute;left:-5%;right:-5%;bottom:0;height:95px;background:linear-gradient(0deg,#100b11,#24151d);border-top:3px solid #7f5535}.theater-halo{position:absolute;left:50%;top:7%;transform:translateX(-50%);width:560px;height:520px;background:radial-gradient(ellipse,#ecbc7162,transparent 68%);filter:blur(23px)}.theater-filigree{position:absolute;top:30px;left:12%;right:12%;text-align:center;font-family:Georgia,serif;font-size:15px;letter-spacing:.28em;color:#ead5ad;opacity:.75}.welcome-figure{position:absolute;width:min(68%,450px);left:50%;bottom:37px;transform:translateX(-50%);z-index:5;filter:drop-shadow(0 28px 36px #050306ba)}.theater-label{position:absolute;top:20%;left:10%;z-index:6;padding:13px 16px;background:#1b1017d9;border:1px solid #8f6349;border-radius:9px;color:#ead6b6;font-size:11px;letter-spacing:.1em}.theater-tickets{position:absolute;right:7%;bottom:20%;z-index:7;background:#261822e8;border:1px solid #b18355;border-radius:8px;padding:17px 19px;transform:rotate(6deg);box-shadow:0 18px 35px #0008}.theater-tickets b{font:700 20px Georgia,serif;color:#f5d394}.theater-tickets small{display:block;font-size:10px;color:#e0c8bd;margin-top:6px}
 /* Movie thumbnails */
 .movie-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:14px}.movie-btn{background:#201827;padding:0;border:1px solid #433149;border-radius:13px;text-align:left;color:#f8eff7;overflow:hidden;position:relative;transition:all .16s}.movie-btn:hover{border-color:#c09a66;transform:translateY(-3px)}.movie-btn.selected{border-color:#f0c587;box-shadow:inset 0 0 0 1px #edbd7d55,0 0 24px #dfaa6430}.poster{position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;isolation:isolate;aspect-ratio:3/4;background:linear-gradient(145deg,var(--c1),var(--c2))}.poster:before{content:"";position:absolute;inset:-45% -40%;background:radial-gradient(circle at 70% 36%,var(--c3),transparent 37%);z-index:-1;opacity:.66}.poster:after{content:"";position:absolute;inset:0;border:1px solid #ffffff1c;margin:7px;border-radius:5px;background:linear-gradient(180deg,transparent 60%,#0008)}.poster-glyph{font-size:clamp(38px,4vw,66px);filter:drop-shadow(0 15px 14px #0009);transform:rotate(-7deg);z-index:1}.poster-type{position:absolute;bottom:12px;color:#fff;font-size:10px;letter-spacing:.14em;font-weight:900;z-index:2;text-shadow:0 2px 6px #0008}.movie-caption{padding:12px 12px 14px}.movie-caption strong{font-size:13px;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.movie-caption small{display:block;font-size:11px;color:#a999aa;margin-top:6px}.movie-check{position:absolute;right:9px;top:9px;width:25px;height:25px;display:grid;place-items:center;border:1px solid #d4b5d0;border-radius:50%;color:transparent;background:#140f18b8;font-size:13px;z-index:3}.selected .movie-check{background:#e8bd7f;color:#241514;border-color:#f5d69a}.tool-row{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:22px}.search{background:#1e1724;border:1px solid #4a354f;color:#fff;border-radius:10px;min-width:260px;padding:12px 16px}.search::placeholder{color:#8c7c94}.subpanel{padding:24px}.ticket-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}.ticket{border:1px solid #665044;background:linear-gradient(115deg,#322332,#231925);padding:15px;border-radius:11px;display:flex;gap:13px;align-items:center}.ticket .miniposter{width:46px;height:62px;flex-shrink:0}.ticket strong{font-size:12px}.ticket small{display:block;color:#a994ac;margin-top:6px;font-size:11px}.ready-band{border-radius:13px;padding:22px 26px;background:linear-gradient(105deg,#412839,#211a26);border:1px solid #715043;display:flex;justify-content:space-between;align-items:center;gap:20px;margin-top:22px}.ready-band b{font-size:19px}.ready-band p{font-size:12px;color:#bfadb7;margin-top:8px}
 /* Bidding stage */
-.auction-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:15px;gap:20px}.auction-head h1{font-family:Georgia,'Noto Sans KR',serif;font-size:clamp(30px,3vw,42px);font-weight:750;margin-top:6px}.lot-count{font:600 12px 'DM Sans',sans-serif;color:#f0d5b3;letter-spacing:.14em}.live{display:inline-flex;align-items:center;gap:7px;font-size:10px;font-weight:900;letter-spacing:.18em;color:#ffe2cb;background:#673037;border:1px solid #ac5d60;padding:8px 13px;border-radius:99px}.live i{width:8px;height:8px;background:#ff9689;border-radius:50%;box-shadow:0 0 0 4px #ff988a25;animation:pulse 2s infinite}@keyframes pulse{50%{box-shadow:0 0 0 9px #ff988a04}}.stage-view{height:490px;border:1px solid #855d4d;border-radius:17px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 48% 50%,#b67c4936,transparent 44%),linear-gradient(90deg,#3a1126 0%,#190d1b 19%,#251320 52%,#180e19 80%,#49182e 100%);box-shadow:inset 0 0 60px #0008,0 27px 60px #0006}.stage-curtain{position:absolute;top:0;left:0;right:0;height:94px;z-index:2;background:repeating-linear-gradient(95deg,#4e1930 0,#793147 29px,#411529 55px);clip-path:polygon(0 0,100% 0,100% 40%,96% 63%,91% 40%,86% 61%,81% 40%,76% 60%,71% 42%,66% 59%,61% 43%,56% 59%,50% 41%,45% 61%,40% 42%,35% 60%,30% 41%,25% 59%,20% 40%,15% 61%,10% 40%,5% 61%,0 40%);box-shadow:0 20px 30px #0d061280}.curtain-gold{position:absolute;top:45px;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,#b78b4f,#f5d48d,#b78b4f,transparent);z-index:4}.spot{position:absolute;top:-60px;width:360px;height:360px;pointer-events:none;background:conic-gradient(from 152deg at 50% 1%,transparent 0deg,#fbdc9b14 24deg,#fbdc9b0a 39deg,transparent 70deg);filter:blur(2px)}.spot.left{left:-1%;transform:rotate(-12deg)}.spot.right{right:0;transform:scaleX(-1) rotate(-12deg)}.floor{position:absolute;bottom:0;left:0;right:0;height:65px;background:linear-gradient(#5a3827,#140c12);border-top:3px solid #b78b4f;box-shadow:0 -11px 30px #b6873e24;z-index:2}.floor-lights{position:absolute;bottom:55px;left:7%;right:7%;height:16px;z-index:3;display:flex;justify-content:space-around}.floor-lights i{width:8px;height:8px;background:#ffdaa5;border-radius:50%;box-shadow:0 0 18px 6px #e1a85f50}.lot-poster{position:absolute;left:5.2%;top:22%;height:265px;width:198px;z-index:4;border:8px solid #412f28;box-shadow:0 0 0 2px #b9945d,0 20px 43px #000a;transform:rotate(-3deg)}.lot-poster .poster{height:100%;aspect-ratio:auto}.lot-poster .poster-glyph{font-size:83px}.lot-poster .poster-type{font-size:13px;bottom:19px}.lot-frame-label{position:absolute;bottom:-48px;left:0;right:0;text-align:center;color:#ebcb98;font-size:11px;font-weight:800;letter-spacing:.07em;white-space:nowrap}.auctioneer{position:absolute;left:29%;bottom:45px;height:382px;max-width:37%;width:350px;z-index:4;display:flex;align-items:end;justify-content:center;filter:drop-shadow(0 15px 18px #000a)}.auctioneer svg{height:100%;width:100%}.speech{position:absolute;z-index:7;top:101px;left:43%;max-width:260px;min-height:58px;background:#f9e9c9;border:2px solid #dca86e;color:#402634;border-radius:15px 15px 15px 4px;padding:11px 16px;font-size:13px;font-weight:800;line-height:1.5;box-shadow:0 10px 22px #0006}.speech:after{content:"";position:absolute;bottom:-10px;left:18px;border-top:11px solid #f9e9c9;border-right:12px solid transparent}.stage-number{position:absolute;left:5%;top:96px;z-index:4;font:800 12px 'DM Sans',sans-serif;color:#e6c895;letter-spacing:.23em}.board{position:absolute;right:3.5%;top:17%;width:29%;min-width:260px;z-index:5;border-radius:14px;padding:20px 20px 18px;background:linear-gradient(135deg,#211b23f0,#0d0d15f0);border:1px solid #be9164;box-shadow:0 18px 40px #0009,0 0 0 6px #17111a80}.board-title{font-family:Georgia,serif;text-align:center;letter-spacing:.2em;color:#edc28c;font-size:13px;border-bottom:1px solid #6c5140;padding-bottom:13px}.board-lot{font-size:18px;letter-spacing:-.04em;margin:12px 0 6px;line-height:1.35}.board-genre{color:#b9a9b6;font-size:11px}.bid-row-label{font-size:11px;color:#e4c8a9;display:flex;justify-content:space-between;align-items:center;margin-top:22px}.bid-number{font-family:Georgia,serif;font-size:45px;line-height:1.2;color:#ffdb9b;margin-top:3px}.bid-number small{font:600 13px 'Noto Sans KR',sans-serif;color:#ddc2a0}.coin-track{height:6px;background:#423043;border-radius:9px;margin-top:11px;overflow:hidden}.coin-track>div{height:100%;border-radius:9px;background:linear-gradient(90deg,#a774dc,#e2b475);width:0;transition:width .25s}.board-budget{display:flex;justify-content:space-between;font-size:11px;margin-top:10px;color:#c7adba}.board-budget b{color:#e7ca9c}.stage-shadow{position:absolute;z-index:3;bottom:32px;left:12%;width:64%;height:30px;border-radius:50%;filter:blur(11px);background:#000a}.bid-workspace{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(280px,.75fr);gap:18px;margin-top:19px}.control-card,.ledger-card{background:linear-gradient(140deg,#221a29,#16121d);border:1px solid #4e3b4e;border-radius:15px;padding:21px 23px}.control-top{display:flex;justify-content:space-between;align-items:start;gap:14px}.control-top h2,.ledger-card h2{font-size:16px}.control-top p{font-size:12px;color:#a99bac;margin-top:7px}.balance{font-family:Georgia,serif;font-size:24px;color:var(--goldlight)}.balance small{font:600 12px 'Noto Sans KR',sans-serif;color:var(--muted)}.bid-control{display:flex;align-items:center;gap:20px;margin:24px 0 20px}.bid-control .range{flex:1;accent-color:#efbe77;height:7px;cursor:pointer}.coin-adjust{display:flex;gap:8px;align-items:center}.coin-adjust button{background:#352639;border:1px solid #785d67;color:#f9e2be;border-radius:9px;font-weight:900;min-width:41px;height:43px}.coin-adjust button:hover:not(:disabled){background:#52354b}.coin-adjust strong{min-width:80px;text-align:center;font-family:Georgia,serif;font-size:27px;color:#ffdb9a}.coin-adjust small{font-size:11px;color:#baa9aa}.control-bottom{display:flex;align-items:center;gap:8px}.control-bottom .btn:first-child{flex:1}.control-bottom .btn:last-child{flex:0 0 155px}.ledger-grid{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}.ledger-chip{background:#302337;color:#d0bfcb;border:1px solid #503e58;border-radius:8px;padding:8px 10px;font-size:11px;white-space:nowrap}.ledger-chip.active{border-color:#d2a36b;color:#f2d2a7;background:#4d3136}.ledger-hint{font-size:11px;color:#9c899b;margin-top:15px;line-height:1.6}.auction-result{margin-top:18px;border-radius:11px;background:#2d2030;border:1px solid #654450;padding:12px 16px;font-size:12px;color:#e0c9dd;display:flex;gap:12px;align-items:center;min-height:46px}.auction-result b{color:#ffd79d}.stage-view.hammer .auctioneer{animation:hammer .48s ease}.stage-view.hammer .speech{animation:pop .48s ease}@keyframes hammer{45%{transform:translateY(-9px) rotate(-1deg)}}@keyframes pop{45%{transform:scale(1.06)}}
+.auction-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:15px;gap:20px}.auction-head h1{font-family:Georgia,'Noto Sans KR',serif;font-size:clamp(30px,3vw,42px);font-weight:750;margin-top:6px}.lot-count{font:600 12px 'DM Sans',sans-serif;color:#f0d5b3;letter-spacing:.14em}.live{display:inline-flex;align-items:center;gap:7px;font-size:10px;font-weight:900;letter-spacing:.18em;color:#ffe2cb;background:#673037;border:1px solid #ac5d60;padding:8px 13px;border-radius:99px}.live i{width:8px;height:8px;background:#ff9689;border-radius:50%;box-shadow:0 0 0 4px #ff988a25;animation:pulse 2s infinite}@keyframes pulse{50%{box-shadow:0 0 0 9px #ff988a04}}
+/* stage-view: overflow visible so auctioneer head isn't clipped */
+.stage-view{height:490px;border:1px solid #855d4d;border-radius:17px;position:relative;overflow:visible;background:radial-gradient(ellipse at 48% 50%,#b67c4936,transparent 44%),linear-gradient(90deg,#3a1126 0%,#190d1b 19%,#251320 52%,#180e19 80%,#49182e 100%);box-shadow:inset 0 0 60px #0008,0 27px 60px #0006}
+/* stage-clip wraps all decorative elements that must stay clipped */
+.stage-clip{position:absolute;inset:0;border-radius:17px;overflow:hidden;pointer-events:none}
+.stage-curtain{position:absolute;top:0;left:0;right:0;height:94px;z-index:2;background:repeating-linear-gradient(95deg,#4e1930 0,#793147 29px,#411529 55px);clip-path:polygon(0 0,100% 0,100% 40%,96% 63%,91% 40%,86% 61%,81% 40%,76% 60%,71% 42%,66% 59%,61% 43%,56% 59%,50% 41%,45% 61%,40% 42%,35% 60%,30% 41%,25% 59%,20% 40%,15% 61%,10% 40%,5% 61%,0 40%);box-shadow:0 20px 30px #0d061280}.curtain-gold{position:absolute;top:45px;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,#b78b4f,#f5d48d,#b78b4f,transparent);z-index:4}.spot{position:absolute;top:-60px;width:360px;height:360px;pointer-events:none;background:conic-gradient(from 152deg at 50% 1%,transparent 0deg,#fbdc9b14 24deg,#fbdc9b0a 39deg,transparent 70deg);filter:blur(2px)}.spot.left{left:-1%;transform:rotate(-12deg)}.spot.right{right:0;transform:scaleX(-1) rotate(-12deg)}.floor{position:absolute;bottom:0;left:0;right:0;height:65px;background:linear-gradient(#5a3827,#140c12);border-top:3px solid #b78b4f;box-shadow:0 -11px 30px #b6873e24;z-index:2}.floor-lights{position:absolute;bottom:55px;left:7%;right:7%;height:16px;z-index:3;display:flex;justify-content:space-around}.floor-lights i{width:8px;height:8px;background:#ffdaa5;border-radius:50%;box-shadow:0 0 18px 6px #e1a85f50}.lot-poster{position:absolute;left:5.2%;top:22%;height:265px;width:198px;z-index:4;border:8px solid #412f28;box-shadow:0 0 0 2px #b9945d,0 20px 43px #000a;transform:rotate(-3deg)}.lot-poster .poster{height:100%;aspect-ratio:auto}.lot-poster .poster-glyph{font-size:83px}.lot-poster .poster-type{font-size:13px;bottom:19px}.lot-frame-label{position:absolute;bottom:-48px;left:0;right:0;text-align:center;color:#ebcb98;font-size:11px;font-weight:800;letter-spacing:.07em;white-space:nowrap}
+/* auctioneer: taller, overflow visible so head shows above curtain */
+.auctioneer{position:absolute;left:29%;bottom:45px;height:420px;max-width:37%;width:350px;z-index:6;display:flex;align-items:end;justify-content:center;filter:drop-shadow(0 15px 18px #000a);overflow:visible}.auctioneer svg{height:100%;width:100%;overflow:visible}
+.speech{position:absolute;z-index:7;top:101px;left:43%;max-width:260px;min-height:58px;background:#f9e9c9;border:2px solid #dca86e;color:#402634;border-radius:15px 15px 15px 4px;padding:11px 16px;font-size:13px;font-weight:800;line-height:1.5;box-shadow:0 10px 22px #0006}.speech:after{content:"";position:absolute;bottom:-10px;left:18px;border-top:11px solid #f9e9c9;border-right:12px solid transparent}.stage-number{position:absolute;left:5%;top:96px;z-index:4;font:800 12px 'DM Sans',sans-serif;color:#e6c895;letter-spacing:.23em}.board{position:absolute;right:3.5%;top:17%;width:29%;min-width:260px;z-index:5;border-radius:14px;padding:20px 20px 18px;background:linear-gradient(135deg,#211b23f0,#0d0d15f0);border:1px solid #be9164;box-shadow:0 18px 40px #0009,0 0 0 6px #17111a80}.board-title{font-family:Georgia,serif;text-align:center;letter-spacing:.2em;color:#edc28c;font-size:13px;border-bottom:1px solid #6c5140;padding-bottom:13px}.board-lot{font-size:18px;letter-spacing:-.04em;margin:12px 0 6px;line-height:1.35}.board-genre{color:#b9a9b6;font-size:11px}.bid-row-label{font-size:11px;color:#e4c8a9;display:flex;justify-content:space-between;align-items:center;margin-top:22px}.bid-number{font-family:Georgia,serif;font-size:45px;line-height:1.2;color:#ffdb9b;margin-top:3px}.bid-number small{font:600 13px 'Noto Sans KR',sans-serif;color:#ddc2a0}.coin-track{height:6px;background:#423043;border-radius:9px;margin-top:11px;overflow:hidden}.coin-track>div{height:100%;border-radius:9px;background:linear-gradient(90deg,#a774dc,#e2b475);width:0;transition:width .25s}.board-budget{display:flex;justify-content:space-between;font-size:11px;margin-top:10px;color:#c7adba}.board-budget b{color:#e7ca9c}.stage-shadow{position:absolute;z-index:3;bottom:32px;left:12%;width:64%;height:30px;border-radius:50%;filter:blur(11px);background:#000a}.bid-workspace{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(280px,.75fr);gap:18px;margin-top:19px}.control-card,.ledger-card{background:linear-gradient(140deg,#221a29,#16121d);border:1px solid #4e3b4e;border-radius:15px;padding:21px 23px}.control-top{display:flex;justify-content:space-between;align-items:start;gap:14px}.control-top h2,.ledger-card h2{font-size:16px}.control-top p{font-size:12px;color:#a99bac;margin-top:7px}.balance{font-family:Georgia,serif;font-size:24px;color:var(--goldlight)}.balance small{font:600 12px 'Noto Sans KR',sans-serif;color:var(--muted)}.bid-control{display:flex;align-items:center;gap:20px;margin:24px 0 20px}.bid-control .range{flex:1;accent-color:#efbe77;height:7px;cursor:pointer}.coin-adjust{display:flex;gap:8px;align-items:center}.coin-adjust button{background:#352639;border:1px solid #785d67;color:#f9e2be;border-radius:9px;font-weight:900;min-width:41px;height:43px}.coin-adjust button:hover:not(:disabled){background:#52354b}.coin-adjust strong{min-width:80px;text-align:center;font-family:Georgia,serif;font-size:27px;color:#ffdb9a}.coin-adjust small{font-size:11px;color:#baa9aa}.control-bottom{display:flex;align-items:center;gap:8px}.control-bottom .btn:first-child{flex:1}.control-bottom .btn:last-child{flex:0 0 155px}.ledger-grid{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}.ledger-chip{background:#302337;color:#d0bfcb;border:1px solid #503e58;border-radius:8px;padding:8px 10px;font-size:11px;white-space:nowrap}.ledger-chip.active{border-color:#d2a36b;color:#f2d2a7;background:#4d3136}.ledger-hint{font-size:11px;color:#9c899b;margin-top:15px;line-height:1.6}.auction-result{margin-top:18px;border-radius:11px;background:#2d2030;border:1px solid #654450;padding:12px 16px;font-size:12px;color:#e0c9dd;display:flex;gap:12px;align-items:center;min-height:46px}.auction-result b{color:#ffd79d}.stage-view.hammer .auctioneer{animation:hammer .48s ease}.stage-view.hammer .speech{animation:pop .48s ease}@keyframes hammer{45%{transform:translateY(-9px) rotate(-1deg)}}@keyframes pop{45%{transform:scale(1.06)}}
 /* Refinement */
 .refine-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:20px}.refine-panel{padding:26px}.refine-panel h2{font-size:18px;margin-bottom:10px}.refine-panel p{font-size:12px;color:var(--muted)}.choice-row{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin-top:21px}.choice{border:1px solid #563e58;background:#261c2b;color:#f1e9f2;border-radius:12px;padding:18px;text-align:left;min-height:125px}.choice strong{display:block;margin-top:13px;font-size:14px}.choice small{display:block;color:#bba7bc;font-size:11px;margin-top:5px}.choice.active{border-color:#ebbb7d;background:#51363f;box-shadow:inset 0 0 0 1px #deb57555}.stars{display:flex;gap:8px;margin:18px 0}.stars button{border:1px solid #6e5146;background:#302433;border-radius:11px;width:52px;height:52px;color:#6e5c5a;font-size:27px}.stars button.active{background:#533d39;color:#ffce81}.host-note{border:1px solid #85634e;background:radial-gradient(circle at 60% 10%,#6b443a52,transparent 65%),#241a24;border-radius:16px;padding:26px;display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center}.host-note svg{width:190px;height:220px;filter:drop-shadow(0 8px 12px #0008)}.host-note strong{color:#f4d6a2;font-size:19px}.host-note p{font-size:12px;color:#c6b0ba;line-height:1.8}
 /* Results */
 .result-top{display:grid;grid-template-columns:1.05fr .95fr;gap:20px;margin-bottom:19px}.award{border:1px solid #a07851;background:radial-gradient(circle at 40% 30%,#704d3763,transparent 57%),linear-gradient(130deg,#392333,#1a141e);border-radius:16px;padding:32px;display:flex;gap:27px;align-items:center}.award .poster{width:150px;flex:0 0 150px;height:215px;border:4px solid #a47d55;box-shadow:0 12px 35px #0008}.award h2{font-family:Georgia,serif;font-size:29px;margin:12px 0}.award p{font-size:13px;color:#cfbfc6;line-height:1.8}.award-note{padding:25px}.award-note strong{font-size:18px}.award-note p{margin-top:9px;font-size:12px;color:#c2acbe;line-height:1.8}.award-note ul{padding-left:18px;font-size:12px;line-height:2.1;color:#b8a9ba;margin-bottom:0}.rec-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}.rec-card{background:#231a29;border:1px solid #4d374e;border-radius:12px;overflow:hidden}.rec-card .poster{height:182px;aspect-ratio:auto}.rec-card .poster-glyph{font-size:52px}.rec-card .copy{padding:12px}.rec-card .copy b{font-size:13px}.rec-card .copy small{display:block;font-size:11px;color:#b5a1b5;margin-top:6px}.rec-card .rank{color:#f3c990;font-weight:800;font-size:10px;letter-spacing:.09em;margin-bottom:8px}.footnote{color:#a99bab;font-size:11px;margin-top:17px;line-height:1.6}
 /* tablet / mobile */
 @media(max-width:1270px){.head-steps{gap:3px}.step-pill{font-size:10px;gap:5px}.step-pill .dot{width:20px;height:20px}.movie-grid{grid-template-columns:repeat(4,1fr)}.ticket-row{grid-template-columns:repeat(3,1fr)}.auctioneer{left:27%;width:330px}.speech{left:41%}.board{width:31%}.lot-poster{left:3%;width:175px;height:237px}.bid-workspace{grid-template-columns:1fr}.rec-grid{grid-template-columns:repeat(4,1fr)}}
-@media(max-width:900px){header{height:auto;min-height:70px;flex-wrap:wrap;gap:8px;padding:12px 20px}.head-steps{order:3;width:100%;justify-content:space-around;overflow-x:auto}.step-pill span:last-child{display:none}main{padding:20px 16px 42px}.welcome{grid-template-columns:1fr}.welcome-copy{min-height:450px;padding:56px 30px 25px}.theater-home{min-height:460px}.welcome-figure{width:250px}.movie-grid{grid-template-columns:repeat(3,1fr)}.ticket-row{grid-template-columns:repeat(2,1fr)}.stage-view{height:580px}.auctioneer{left:24%;bottom:80px;width:250px;height:300px}.lot-poster{top:23%;left:4%;width:136px;height:195px}.board{top:auto;bottom:72px;right:3%;width:32%;min-width:224px}.speech{left:36%;top:85px}.refine-grid,.result-top{grid-template-columns:1fr}.rec-grid{grid-template-columns:repeat(3,1fr)}}
-@media(max-width:560px){.brand-name strong{font-size:17px}.head-right .demo-flag{display:none}.section-head{align-items:start;flex-direction:column}.movie-grid{grid-template-columns:repeat(2,1fr)}.ticket-row{grid-template-columns:1fr}.welcome-copy h1{font-size:47px}.welcome-bottom{gap:14px}.welcome-stat strong{font-size:17px}.stage-view{height:610px}.lot-poster{top:105px;left:5%;width:119px;height:174px}.auctioneer{left:22%;height:250px;bottom:218px;width:220px;max-width:70%}.board{bottom:43px;left:5%;right:5%;width:auto;min-width:0;padding:14px}.board-lot{font-size:14px;margin:5px 0}.bid-number{font-size:30px}.bid-row-label{margin-top:9px}.board-title{padding-bottom:6px}.speech{top:82px;left:42%;right:3%;font-size:10px;min-height:0}.floor{height:28px}.floor-lights{bottom:21px}.bid-control{flex-wrap:wrap}.coin-adjust{justify-content:space-between;width:100%}.control-bottom{flex-wrap:wrap}.control-bottom .btn:last-child{flex:1 1 100%}.choice-row{grid-template-columns:1fr}.award{padding:19px;gap:14px}.award .poster{width:110px;flex-basis:110px;height:175px}.award h2{font-size:20px}.rec-grid{grid-template-columns:repeat(2,1fr)}.footer-actions{flex-wrap:wrap}.footer-actions .btn{width:100%}}
+@media(max-width:900px){header{height:auto;min-height:70px;flex-wrap:wrap;gap:8px;padding:12px 20px}.head-steps{order:3;width:100%;justify-content:space-around;overflow-x:auto}.step-pill span:last-child{display:none}main{padding:20px 16px 42px}.welcome{grid-template-columns:1fr}.welcome-copy{min-height:450px;padding:56px 30px 25px}.theater-home{min-height:460px}.welcome-figure{width:250px}.movie-grid{grid-template-columns:repeat(3,1fr)}.ticket-row{grid-template-columns:repeat(2,1fr)}.stage-view{height:580px}.auctioneer{left:24%;bottom:80px;width:250px;height:340px}.lot-poster{top:23%;left:4%;width:136px;height:195px}.board{top:auto;bottom:72px;right:3%;width:32%;min-width:224px}.speech{left:36%;top:85px}.refine-grid,.result-top{grid-template-columns:1fr}.rec-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:560px){.brand-name strong{font-size:17px}.head-right .demo-flag{display:none}.section-head{align-items:start;flex-direction:column}.movie-grid{grid-template-columns:repeat(2,1fr)}.ticket-row{grid-template-columns:1fr}.welcome-copy h1{font-size:47px}.welcome-bottom{gap:14px}.welcome-stat strong{font-size:17px}.stage-view{height:610px}.lot-poster{top:105px;left:5%;width:119px;height:174px}.auctioneer{left:22%;height:280px;bottom:218px;width:220px;max-width:70%}.board{bottom:43px;left:5%;right:5%;width:auto;min-width:0;padding:14px}.board-lot{font-size:14px;margin:5px 0}.bid-number{font-size:30px}.bid-row-label{margin-top:9px}.board-title{padding-bottom:6px}.speech{top:82px;left:42%;right:3%;font-size:10px;min-height:0}.floor{height:28px}.floor-lights{bottom:21px}.bid-control{flex-wrap:wrap}.coin-adjust{justify-content:space-between;width:100%}.control-bottom{flex-wrap:wrap}.control-bottom .btn:last-child{flex:1 1 100%}.choice-row{grid-template-columns:1fr}.award{padding:19px;gap:14px}.award .poster{width:110px;flex-basis:110px;height:175px}.award h2{font-size:20px}.rec-grid{grid-template-columns:repeat(2,1fr)}.footer-actions{flex-wrap:wrap}.footer-actions .btn{width:100%}}
 /* Modal */
 .modal-backdrop{position:fixed;inset:0;background:#000a;z-index:200;display:flex;align-items:center;justify-content:center;padding:20px;animation:enter .2s ease}
 .modal{background:linear-gradient(140deg,#1d1626,#15111c);border:1px solid #7a5a6a;border-radius:20px;max-width:560px;width:100%;max-height:88vh;overflow-y:auto;box-shadow:0 40px 80px #0009;position:relative}
@@ -58,7 +66,7 @@ main{max-width:1550px;margin:0 auto;padding:32px clamp(20px,3vw,42px) 70px}.view
 <!-- 1 movies -->
 <section class="view" id="view1">
   <div class="section-head"><div><div class="kicker">THE GALLERY · STEP 01</div><h1>경매에 가져갈 영화를 골라주세요</h1><p>실제로 본 영화를 골라주세요. 다양한 영화가 있을수록 취향을 더 잘 파악할 수 있어요.</p></div><span class="tag gold" id="selectedCount">0편 선택됨</span></div>
-  <div class="tool-row"><span class="hint">아래는 디자인 시연용 가상 영화입니다. 최소 3편, 권장 8~12편</span><input id="search" class="search" type="search" placeholder="⌕  영화 제목 검색" aria-label="영화 제목 검색" oninput="renderMovies()"></div>
+  <div class="tool-row"><span class="hint">본 영화를 선택해 주세요. 최소 3편, 권장 8~12편</span><input id="search" class="search" type="search" placeholder="⌕  영화 제목 검색" aria-label="영화 제목 검색" oninput="renderMovies()"></div>
   <div class="movie-grid" id="movieGrid"></div>
   <div class="footer-actions"><small>✓ 본 영화만 선택해 주세요. 영화 포스터를 누르면 선택이 전환됩니다.</small><button id="toConfirm" class="btn" onclick="go(2)">경매 출품작 확인하기 →</button></div>
 </section>
@@ -71,7 +79,22 @@ main{max-width:1550px;margin:0 auto;padding:32px clamp(20px,3vw,42px) 70px}.view
 <!-- 3 Auction -->
 <section class="view" id="view3">
   <div class="auction-head"><div><div class="kicker">NOW ON STAGE · THE AUCTION ROOM</div><h1>오늘 밤의 영화 경매</h1></div><div style="text-align:right"><span class="live"><i></i> LIVE AUCTION</span><div class="lot-count" id="lotProgress" style="margin-top:10px">LOT 01 / 08</div></div></div>
-  <div class="stage-view" id="mainStage"><div class="stage-curtain"></div><div class="curtain-gold"></div><div class="spot left"></div><div class="spot right"></div><div class="stage-shadow"></div><div class="stage-number" id="lotNumber">LOT NO. 001</div><div class="lot-poster" id="livePoster"></div><div class="auctioneer" id="auctionHost"></div><div class="speech" id="hostSpeech" role="status" aria-live="polite">첫 번째 작품이 올라왔습니다. 입찰하시겠어요?</div><div class="board"><div class="board-title">✦ &nbsp; TODAY'S LOT &nbsp; ✦</div><h3 class="board-lot" id="boardTitle">출품작</h3><div class="board-genre" id="boardGenre">장르</div><div class="bid-row-label"><span>YOUR CURRENT BID</span><span>🪙</span></div><div class="bid-number"><span id="boardBid">0</span> <small>COINS</small></div><div class="coin-track"><div id="boardBar"></div></div><div class="board-budget"><span>보유 코인</span><b id="boardRemaining">100 / 100</b></div></div><div class="floor-lights" id="floorLights"></div><div class="floor"></div></div>
+  <div class="stage-view" id="mainStage">
+    <!-- 클립되는 배경 요소들 -->
+    <div class="stage-clip">
+      <div class="stage-curtain"></div><div class="curtain-gold"></div>
+      <div class="spot left"></div><div class="spot right"></div>
+      <div class="floor-lights" id="floorLights"></div>
+      <div class="floor"></div>
+    </div>
+    <!-- 클립 없이 표시되는 요소들 -->
+    <div class="stage-shadow"></div>
+    <div class="stage-number" id="lotNumber">LOT NO. 001</div>
+    <div class="lot-poster" id="livePoster"></div>
+    <div class="auctioneer" id="auctionHost"></div>
+    <div class="speech" id="hostSpeech" role="status" aria-live="polite">첫 번째 작품이 올라왔습니다. 입찰하시겠어요?</div>
+    <div class="board"><div class="board-title">✦ &nbsp; TODAY'S LOT &nbsp; ✦</div><h3 class="board-lot" id="boardTitle">출품작</h3><div class="board-genre" id="boardGenre">장르</div><div class="bid-row-label"><span>YOUR CURRENT BID</span><span>🪙</span></div><div class="bid-number"><span id="boardBid">0</span> <small>COINS</small></div><div class="coin-track"><div id="boardBar"></div></div><div class="board-budget"><span>보유 코인</span><b id="boardRemaining">100 / 100</b></div></div>
+  </div>
   <div class="bid-workspace">
     <div class="control-card"><div class="control-top"><div><h2>🪙 입찰 금액 선택</h2><p>이 작품이 마음에 드는 만큼 코인을 배분하세요.</p></div><div class="balance" id="cashValue">100 <small>코인 잔액</small></div></div><div class="bid-control"><input class="range" id="bidSlider" type="range" min="0" max="100" value="0" step="5" aria-label="현재 영화의 입찰 코인" oninput="changeBid(Number(this.value))"><div class="coin-adjust"><button onclick="changeBid(currentBid()-5)" aria-label="5코인 줄이기">−5</button><strong id="liveBid">0</strong><button onclick="changeBid(currentBid()+5)" aria-label="5코인 늘리기">+5</button><small>COINS</small></div></div><div class="control-bottom"><button class="btn" id="confirmLot" onclick="finishLot(false)">🔨 낙찰 확정하고 다음 작품 →</button><button class="btn secondary" onclick="finishLot(true)">이 작품 건너뛰기</button></div></div>
     <div class="ledger-card"><div style="display:flex;justify-content:space-between;align-items:center;gap:9px"><h2>나의 낙찰 목록</h2><span class="tag gold" id="portfolioCount">0건 입찰 완료</span></div><div class="ledger-grid" id="ledgerChips"></div><div class="ledger-hint">입찰한 코인을 다시 배분하고 싶다면 이전 작품으로 돌아가 수정할 수 있어요. 입찰은 가상 코인으로만 이루어집니다.</div><div style="margin-top:16px"><button class="btn ghost tiny" id="prevLot" onclick="prevAuction()">← 이전 작품</button></div></div>
@@ -81,14 +104,16 @@ main{max-width:1550px;margin:0 auto;padding:32px clamp(20px,3vw,42px) 70px}.view
 <!-- 4 Refine -->
 <section class="view" id="view4">
   <div class="section-head"><div><div class="kicker">BEFORE THE FINAL HAMMER · STEP 03</div><h1>경매사의 마지막 질문</h1><p>취향을 조금 더 정확하게 알 수 있도록 두 가지 질문을 준비했어요. 답변은 선택 사항입니다.</p></div><span class="tag gold">입찰 완료</span></div>
-  <div class="refine-grid"><div style="display:grid;gap:20px"><div class="surface refine-panel"><h2>혹시 다시 보고 싶지 않은 영화가 있나요?</h2><p>코인을 투자하지 않았다고 반드시 싫어하는 영화는 아니니까요.</p><div class="choice-row" id="dislikeChoices"></div></div><div class="surface refine-panel"><h2 id="favQuestion">가장 많이 투자한 작품은 얼마나 만족스러웠나요?</h2><p>상대적인 코인 배분에 만족도 정보를 선택적으로 추가해요.</p><div class="stars" id="stars"></div><p id="ratingLabel">만족도 4점</p></div></div><div class="host-note"><div id="refineHost"></div><span class="kicker">AUCTIONEER'S NOTE</span><strong>“멋진 취향이군요!”</strong><p>다른 사람의 평가와 당신의 경매 선택을 비교해, 취향에 어울리는 영화들을 골라볼게요.</p><span class="tag gold">다음은 추천 시사회입니다</span></div></div>
+  <div class="refine-grid"><div style="display:grid;gap:20px"><div class="surface refine-panel"><h2>혹시 다시 보고 싶지 않은 영화가 있나요?</h2><p>코인을 투자하지 않았다고 반드시 싫어하는 영화는 아니니까요.</p><div class="choice-row" id="dislikeChoices"></div></div><div class="surface refine-panel"><h2 id="favQuestion">가장 많이 투자한 작품은 얼마나 만족스러웠나요?</h2><p>상대적인 코인 배분에 만족도 정보를 선택적으로 추가해요.</p><div class="stars" id="stars"></div><p id="ratingLabel">만족도 4점</p></div></div><div class="host-note"><div id="refineHost"></div><span class="kicker">AUCTIONEER'S NOTE</span><strong>"멋진 취향이군요!"</strong><p>다른 사람의 평가와 당신의 경매 선택을 비교해, 취향에 어울리는 영화들을 골라볼게요.</p><span class="tag gold">다음은 추천 시사회입니다</span></div></div>
   <div class="footer-actions"><button class="btn secondary" onclick="go(3)">← 경매장으로 돌아가기</button><button class="btn" onclick="go(5)">낙찰 결과와 추천 확인 →</button></div>
 </section>
 <!-- 5 Result -->
 <section class="view" id="view5">
   <div class="section-head"><div><div class="kicker">SOLD! · YOUR PRIVATE SCREENING</div><h1>당신을 위한 비밀 상영작</h1><p>가상 경매에서 드러난 영화 선호도를 바탕으로 준비한 추천 미리보기입니다.</p></div><span class="tag green">✓ 경매 종료</span></div>
-  <div class="result-top"><div class="award" id="heroRec"></div><div class="surface award-note"><span class="tag gold">★ AUCTION SUMMARY</span><div style="margin-top:17px"><strong>당신의 취향이 낙찰되었습니다.</strong></div><p id="resultText">입찰한 영화를 바탕으로 추천할 준비를 마쳤습니다.</p><ul><li>경매 취향 신호 → 추천 모델 입력</li><li>MovieLens 협업 필터링 연결 예정</li><li>아직 본 적 없는 영화 10편 이상 추천</li></ul></div></div>
-  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px"><h2 style="font-size:20px">추천 상영작 10편</h2><span class="tag">SAMPLE RECOMMENDATIONS</span></div><div class="rec-grid" id="resultGrid"></div><p class="footnote">※ 현재 버전은 UI/인터랙션 시연용입니다. 영화, 추천 순위 및 설명은 가상 예시이며 실제 MovieLens 협업 필터링 결과가 아닙니다.</p>
+  <div class="result-top"><div class="award" id="heroRec"></div><div class="surface award-note"><span class="tag gold">★ AUCTION SUMMARY</span><div style="margin-top:17px"><strong>당신의 취향이 낙찰되었습니다.</strong></div><p id="resultText">입찰한 영화를 바탕으로 추천할 준비를 마쳤습니다.</p><ul><li>경매 취향 신호 → Item-CF 추천 모델 입력</li><li>MovieLens 606명 협업 필터링</li><li>아직 본 적 없는 영화 15편 추천</li></ul></div></div>
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px"><h2 style="font-size:20px">추천 상영작</h2><span class="tag">Item-CF RECOMMENDATIONS</span></div>
+  <div class="rec-grid" id="resultGrid"></div>
+  <p class="footnote">※ MovieLens ml-latest-small 데이터셋 기반 Item-based Collaborative Filtering 추천 결과입니다.</p>
   <div class="footer-actions">
     <small>취향은 언제든 다시 경매할 수 있습니다.</small>
     <div style="display:flex;gap:10px">
@@ -98,9 +123,19 @@ main{max-width:1550px;margin:0 auto;padding:32px clamp(20px,3vw,42px) 70px}.view
   </div>
 </section>
 </main>
+
+<!-- 영화 상세 모달 -->
+<div id="movieModal" class="modal-backdrop hide" onclick="closeModal(event)">
+  <div class="modal" id="modalInner">
+    <button class="modal-close" onclick="document.getElementById('movieModal').classList.add('hide')">✕</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
 <script src="js/recommender.js"></script>
 <script>
-// 장르별 포스터 스타일 매핑
+const SHEET_URL = 'https://script.google.com/macros/s/AKfycbzif396j8CYuxBWZ_LObcglhDFPiEIMGcVUzKV2NyRFT5BUq3GjNqVgU2y8NmgMezrz/exec';
+
 const GENRE_STYLE = {
   'Action':      {icon:'⚔️', a:'#1a0d0d', b:'#8b2020', c:'#ff6b4a'},
   'Adventure':   {icon:'🗺️', a:'#0d1a10', b:'#2d6e3e', c:'#a8e6b0'},
@@ -127,68 +162,46 @@ const DEFAULT_STYLE = {icon:'🎬', a:'#141020', b:'#503870', c:'#c0a0e0'};
 function getStyle(genreStr) {
   if (!genreStr) return DEFAULT_STYLE;
   const genres = genreStr.split('|');
-  for (const g of genres) {
-    if (GENRE_STYLE[g]) return GENRE_STYLE[g];
-  }
+  for (const g of genres) { if (GENRE_STYLE[g]) return GENRE_STYLE[g]; }
   return DEFAULT_STYLE;
 }
+function cleanTitle(t){ return t.replace(/\s*\(\d{4}\)\s*$/, '').trim(); }
 
-// 영화 제목에서 연도 제거: "Toy Story (1995)" → "Toy Story"
-function cleanTitle(title) {
-  return title.replace(/\s*\(\d{4}\)\s*$/, '').trim();
-}
-
-// candidates.json 로드한 films
-let films = [];
-let recs = [];
-
+let films=[], recs=[];
 const steps=['초대장','본 영화 선택','경매 준비','실시간 경매','취향 확인','추천 결과'];
-let page=0, selected=new Set();
-let order=[], index=0, bids={}, completed=new Set(), dislike='', rating=4;
+let page=0, selected=new Set(), order=[], index=0, bids={}, completed=new Set(), dislike='', rating=4;
 
-// 데이터 로드 후 앱 초기화
 async function init() {
   try {
-    // candidates.json 로드
     const res = await fetch('data/candidates.json');
     const raw = await res.json();
     films = raw.map(f => {
-      const s = getStyle(f.genre.replace(/ · /g, '|'));
-      return {
-        id: String(f.id),
-        title: cleanTitle(f.title),
-        genre: f.genre.replace(/\|/g, ' · '),
-        icon: s.icon, a: s.a, b: s.b, c: s.c,
-        code: cleanTitle(f.title).toUpperCase().slice(0, 18),
-        posterUrl: null
-      };
+      const s = getStyle(f.genre.replace(/ · /g,'|'));
+      return { id:String(f.id), title:cleanTitle(f.title), genre:f.genre.replace(/\|/g,' · '),
+               icon:s.icon, a:s.a, b:s.b, c:s.c,
+               code:cleanTitle(f.title).toUpperCase().slice(0,18), posterUrl:null };
     });
-    films = films.sort(() => Math.random() - 0.5).slice(0, 30);
-    // recommender.js 데이터 + TMDB 링크 로드 병렬 실행
+    films = films.sort(() => Math.random() - 0.5);
     await Promise.all([loadData(), loadTmdbLinks()]);
-    // 포스터 백그라운드 로드 (화면 먼저 띄우고 나서)
-    enrichWithPosters(films).then(enriched => {
-      films = enriched;
-      if(page === 1) renderMovies();
-    });
-  } catch(e) {
-    console.warn('데이터 로드 실패, 오프라인 모드', e);
-  }
+    enrichWithPosters(films).then(enriched => { films=enriched; if(page===1)renderMovies(); });
+  } catch(e) { console.warn('데이터 로드 실패', e); }
   go(0);
 }
+
 const $=id=>document.getElementById(id);
 const escapeHtml=s=>String(s).replace(/[&<>"']/g,x=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[x]));
+
 function poster(f){
-  if(f.posterUrl){
-    return `<div class="poster" style="--c1:${f.a};--c2:${f.b};--c3:${f.c};padding:0;background:none"><img src="${f.posterUrl}" alt="${escapeHtml(f.title)}" style="width:100%;height:100%;object-fit:cover;display:block;border-radius:0"></div>`;
-  }
+  if(f.posterUrl) return `<div class="poster" style="--c1:${f.a};--c2:${f.b};--c3:${f.c};padding:0;background:none"><img src="${f.posterUrl}" alt="${escapeHtml(f.title)}" style="width:100%;height:100%;object-fit:cover;display:block;border-radius:0"></div>`;
   return `<div class="poster" style="--c1:${f.a};--c2:${f.b};--c3:${f.c}"><span class="poster-glyph">${f.icon}</span><span class="poster-type">${escapeHtml(f.code||f.title)}</span></div>`;
 }
-const hostSvg=`<svg viewBox="0 0 330 380" role="img" aria-label="정장을 입고 경매 망치를 든 경매사 일러스트" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="jacket" x1="0" x2="1"><stop stop-color="#211d29"/><stop offset=".48" stop-color="#443344"/><stop offset="1" stop-color="#17131f"/></linearGradient><linearGradient id="podium" x1="0" x2="1"><stop stop-color="#49251f"/><stop offset=".45" stop-color="#854838"/><stop offset="1" stop-color="#361b20"/></linearGradient><linearGradient id="skin" x1="0" x2=".8" y2=".8"><stop stop-color="#efd0b4"/><stop offset="1" stop-color="#c88a73"/></linearGradient></defs><ellipse cx="168" cy="366" rx="147" ry="13" fill="#000" opacity=".36"/><path d="M85 276Q78 207 110 183Q137 167 164 170Q207 164 227 183Q244 211 253 278" fill="url(#jacket)" stroke="#80606b" stroke-width="2"/><path d="M145 174L163 209L181 174L202 198L180 258H143L124 199Z" fill="#f5e9d6"/><path d="M161 206L151 231L163 268L178 232L166 206" fill="#9a485d"/><path d="M146 174L160 210L135 229L112 183" fill="#2a202c"/><path d="M184 174L165 210L193 229L220 185" fill="#2c2330"/><path d="M156 171L160 192L173 192L179 171" fill="url(#skin)"/><ellipse cx="167" cy="116" rx="51" ry="62" fill="url(#skin)"/><path d="M118 122Q100 70 129 42Q157 20 188 36Q227 49 215 105L208 119Q204 73 189 68Q158 90 123 82Z" fill="#261823"/><path d="M124 80Q146 81 170 65Q190 63 204 83" fill="none" stroke="#402532" stroke-width="12" stroke-linecap="round"/><path d="M139 113q10-7 20 0M179 113q9-7 18 0" fill="none" stroke="#5a3b40" stroke-width="3" stroke-linecap="round"/><circle cx="149" cy="114" r="2.6" fill="#2d1e29"/><circle cx="188" cy="114" r="2.6" fill="#2d1e29"/><path d="M170 119l-5 18h8" fill="none" stroke="#b57c6d" stroke-width="2.5"/><path d="M152 146Q168 158 183 144" fill="none" stroke="#9c635d" stroke-width="3" stroke-linecap="round"/><path d="M118 117Q109 109 105 117Q105 129 118 133M214 117Q225 109 228 119Q225 131 213 133" fill="#d59e83"/><path d="M87 197Q69 210 52 166" fill="none" stroke="#392839" stroke-width="28" stroke-linecap="round"/><path d="M51 166L47 122" fill="none" stroke="url(#skin)" stroke-width="21" stroke-linecap="round"/><path d="M43 118Q39 107 44 97Q53 90 61 108L58 121Z" fill="url(#skin)"/><g transform="rotate(-27 48 83)"><rect x="45" y="56" width="9" height="76" rx="4" fill="#9c603b" stroke="#f7ce8c"/><rect x="20" y="44" width="60" height="27" rx="6" fill="#8a5138" stroke="#e3ac72" stroke-width="4"/><path d="M25 48h50" stroke="#ecc794" stroke-width="3"/></g><path d="M228 197Q244 215 252 249" stroke="#3b2c3c" stroke-width="26" stroke-linecap="round"/><path d="M251 247Q257 259 268 254" stroke="url(#skin)" stroke-width="19" stroke-linecap="round"/><rect x="25" y="265" width="284" height="32" rx="5" fill="#a66f50" stroke="#efd0a2" stroke-width="3"/><path d="M37 290H297L285 377H47Z" fill="url(#podium)" stroke="#d2a17a" stroke-width="3"/><path d="M52 301H283L273 365H61Z" fill="#442625" stroke="#8c5a48" stroke-width="2"/><circle cx="168" cy="331" r="25" fill="#78533c" stroke="#ddb574" stroke-width="3"/><path d="M154 333l9 9l18-22" fill="none" stroke="#f6db9d" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M25 270H309" stroke="#f8d4a0" stroke-width="2"/></svg>`;
+
+const hostSvg=`<svg viewBox="0 0 330 380" role="img" aria-label="경매사 일러스트" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="jacket" x1="0" x2="1"><stop stop-color="#211d29"/><stop offset=".48" stop-color="#443344"/><stop offset="1" stop-color="#17131f"/></linearGradient><linearGradient id="podium" x1="0" x2="1"><stop stop-color="#49251f"/><stop offset=".45" stop-color="#854838"/><stop offset="1" stop-color="#361b20"/></linearGradient><linearGradient id="skin" x1="0" x2=".8" y2=".8"><stop stop-color="#efd0b4"/><stop offset="1" stop-color="#c88a73"/></linearGradient></defs><ellipse cx="168" cy="366" rx="147" ry="13" fill="#000" opacity=".36"/><path d="M85 276Q78 207 110 183Q137 167 164 170Q207 164 227 183Q244 211 253 278" fill="url(#jacket)" stroke="#80606b" stroke-width="2"/><path d="M145 174L163 209L181 174L202 198L180 258H143L124 199Z" fill="#f5e9d6"/><path d="M161 206L151 231L163 268L178 232L166 206" fill="#9a485d"/><path d="M146 174L160 210L135 229L112 183" fill="#2a202c"/><path d="M184 174L165 210L193 229L220 185" fill="#2c2330"/><path d="M156 171L160 192L173 192L179 171" fill="url(#skin)"/><ellipse cx="167" cy="116" rx="51" ry="62" fill="url(#skin)"/><path d="M118 122Q100 70 129 42Q157 20 188 36Q227 49 215 105L208 119Q204 73 189 68Q158 90 123 82Z" fill="#261823"/><path d="M124 80Q146 81 170 65Q190 63 204 83" fill="none" stroke="#402532" stroke-width="12" stroke-linecap="round"/><path d="M139 113q10-7 20 0M179 113q9-7 18 0" fill="none" stroke="#5a3b40" stroke-width="3" stroke-linecap="round"/><circle cx="149" cy="114" r="2.6" fill="#2d1e29"/><circle cx="188" cy="114" r="2.6" fill="#2d1e29"/><path d="M170 119l-5 18h8" fill="none" stroke="#b57c6d" stroke-width="2.5"/><path d="M152 146Q168 158 183 144" fill="none" stroke="#9c635d" stroke-width="3" stroke-linecap="round"/><path d="M118 117Q109 109 105 117Q105 129 118 133M214 117Q225 109 228 119Q225 131 213 133" fill="#d59e83"/><path d="M87 197Q69 210 52 166" fill="none" stroke="#392839" stroke-width="28" stroke-linecap="round"/><path d="M51 166L47 122" fill="none" stroke="url(#skin)" stroke-width="21" stroke-linecap="round"/><path d="M43 118Q39 107 44 97Q53 90 61 108L58 121Z" fill="url(#skin)"/><g transform="rotate(-27 48 83)"><rect x="45" y="56" width="9" height="76" rx="4" fill="#9c603b" stroke="#f7ce8c"/><rect x="20" y="44" width="60" height="27" rx="6" fill="#8a5138" stroke="#e3ac72" stroke-width="4"/><path d="M25 48h50" stroke="#ecc794" stroke-width="3"/></g><path d="M228 197Q244 215 252 249" stroke="#3b2c3c" stroke-width="26" stroke-linecap="round"/><path d="M251 247Q257 259 268 254" stroke="url(#skin)" stroke-width="19" stroke-linecap="round"/><rect x="25" y="265" width="284" height="32" rx="5" fill="#a66f50" stroke="#efd0a2" stroke-width="3"/><path d="M37 290H297L285 377H47Z" fill="url(#podium)" stroke="#d2a17a" stroke-width="3"/><path d="M52 301H283L273 365H61Z" fill="#442625" stroke="#8c5a48" stroke-width="2"/><circle cx="168" cy="331" r="25" fill="#78533c" stroke="#ddb574" stroke-width="3"/><path d="M154 333l9 9l18-22" fill="none" stroke="#f6db9d" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M25 270H309" stroke="#f8d4a0" stroke-width="2"/></svg>`;
+
 function buildNav(){ $('stepNav').innerHTML=steps.map((s,i)=>`<button class="step-pill ${page===i?'active':i<page?'complete':''}" onclick="go(${i})" title="${s}"><span class="dot">${i+1}</span><span>${s}</span></button>`).join('') }
 function go(p){page=Math.max(0,Math.min(5,p));document.querySelectorAll('.view').forEach((el,i)=>el.classList.toggle('show',i===page));buildNav();if(page===1)renderMovies();if(page===2)renderTickets();if(page===3)renderAuction();if(page===4)renderRefine();if(page===5)renderResult();window.scrollTo({top:0,behavior:'smooth'})}
 function restart(){selected=new Set();order=[];index=0;bids={};completed=new Set();dislike='';rating=4;go(0)}
-function renderMovies(){const q=$('search').value.toLowerCase().trim();$('movieGrid').innerHTML=films.filter(f=>f.title.includes(q)||f.genre.toLowerCase().includes(q)).map(f=>`<button class="movie-btn ${selected.has(f.id)?'selected':''}" aria-pressed="${selected.has(f.id)}" onclick="toggleMovie('${f.id}')">${poster(f)}<span class="movie-check">✓</span><div class="movie-caption"><strong>${escapeHtml(f.title)}</strong><small>${f.genre}</small></div></button>`).join('')||'<div class="hint">검색 결과가 없습니다.</div>';$('selectedCount').textContent=selected.size+'편 선택됨';$('toConfirm').disabled=selected.size<3}
+function renderMovies(){const q=$('search').value.toLowerCase().trim();$('movieGrid').innerHTML=films.filter(f=>f.title.toLowerCase().includes(q)||f.genre.toLowerCase().includes(q)).map(f=>`<button class="movie-btn ${selected.has(f.id)?'selected':''}" aria-pressed="${selected.has(f.id)}" onclick="toggleMovie('${f.id}')">${poster(f)}<span class="movie-check">✓</span><div class="movie-caption"><strong>${escapeHtml(f.title)}</strong><small>${f.genre}</small></div></button>`).join('')||'<div class="hint">검색 결과가 없습니다.</div>';$('selectedCount').textContent=selected.size+'편 선택됨';$('toConfirm').disabled=selected.size<3}
 function toggleMovie(id){if(selected.has(id))selected.delete(id);else selected.add(id);renderMovies()}
 function renderTickets(){order=films.filter(f=>selected.has(f.id));$('ticketGrid').innerHTML=order.map(f=>`<div class="ticket"><div class="miniposter">${poster(f)}</div><div><strong>${escapeHtml(f.title)}</strong><small>${f.genre} · LOT 출품작</small></div></div>`).join('')}
 function startAuction(){order=films.filter(f=>selected.has(f.id));bids=Object.fromEntries(order.map(f=>[f.id,0]));completed=new Set();index=0;go(3)}
@@ -203,210 +216,71 @@ function renderLedger(){$('portfolioCount').textContent=completed.size+'건 입�
 function finishLot(skip){const f=currentFilm();if(skip)bids[f.id]=0;completed.add(f.id);const val=bids[f.id]||0;$('hostSpeech').textContent=val>0?`낙찰! 「${f.title}」에 ${val}코인!`:'이번 작품은 유찰! 다음으로 넘어갑니다.';$('auctionMessage').innerHTML=val?`<b>🔨 SOLD!</b> 「${escapeHtml(f.title)}」 ${val}코인 낙찰 완료`:`<b>PASS</b> 「${escapeHtml(f.title)}」는 입찰 없이 넘어갔어요.`;$('mainStage').classList.remove('hammer');void $('mainStage').offsetWidth;$('mainStage').classList.add('hammer');if(index===order.length-1){setTimeout(()=>go(4),430)}else{index++;setTimeout(renderAuction,430)}}
 function prevAuction(){if(index>0){index--;renderAuction()}}
 function renderRefine(){const choices=order.slice(0,2);$('dislikeChoices').innerHTML=choices.map(f=>`<button class="choice ${dislike===f.id?'active':''}" onclick="setDislike('${f.id}')"><span class="tag">${f.genre}</span><strong>${escapeHtml(f.title)}</strong><small>다시는 보고 싶지 않아요</small></button>`).join('')+`<button class="choice ${dislike==='none'?'active':''}" onclick="setDislike('none')"><span class="tag">선택 안 함</span><strong>딱히 없어요</strong><small>이 질문은 건너뛰어도 됩니다.</small></button>`;const fav=[...order].sort((a,b)=>(bids[b.id]||0)-(bids[a.id]||0))[0];$('favQuestion').textContent=`가장 많이 투자한 「${fav?.title||'영화'}」는 얼마나 만족스러웠나요?`;$('stars').innerHTML=[1,2,3,4,5].map(i=>`<button class="${rating>=i?'active':''}" aria-label="${i}점" onclick="setRating(${i})">★</button>`).join('');$('ratingLabel').textContent=`${rating}점 선택됨 · 선택 사항`}
-function setDislike(id){dislike=dislike===id?'':id;renderRefine()}function setRating(r){rating=r;renderRefine()}
+function setDislike(id){dislike=dislike===id?'':id;renderRefine()}
+function setRating(r){rating=r;renderRefine()}
+
 function renderResult(){
-  // Item-CF 추천 실행
   const recRaw = recommend(bids, 15, dislike, rating);
   recs = recRaw.map(m => {
     const s = getStyle(m.genres || m.genre || '');
-    return {
-      id: String(m.id),
-      title: cleanTitle(m.title),
-      genre: (m.genres_list || (m.genre||'').split('|')).join(' · '),
-      icon: s.icon, a: s.a, b: s.b, c: s.c,
-      score: m.score
-    };
+    return { id:String(m.id), title:cleanTitle(m.title),
+             genre:(m.genres_list||(m.genre||'').split('|')).join(' · '),
+             icon:s.icon, a:s.a, b:s.b, c:s.c, score:m.score, posterUrl:null };
   });
-  // 추천 결과 없으면 폴백
   if (!recs.length) {
-    $('resultText').textContent = '경매에서 코인을 배분한 영화가 없어 추천을 생성하지 못했어요. 돌아가서 코인을 입찰해 주세요.';
-    $('heroRec').innerHTML = '';
-    $('resultGrid').innerHTML = '';
-    return;
+    $('resultText').textContent='경매에서 코인을 배분한 영화가 없어 추천을 생성하지 못했어요.';
+    $('heroRec').innerHTML=''; $('resultGrid').innerHTML=''; return;
   }
-  const best = [...order].sort((a,b)=>(bids[b.id]||0)-(bids[a.id]||0))[0];
-  $('resultText').textContent = best && bids[best.id] > 0
-    ? `당신은 「${best.title}」에 가장 많은 코인을 투자했어요. 비슷한 취향의 관객이 좋아한 영화들을 골랐습니다.`
-    : '입찰 결과를 바탕으로 개인화 추천 결과를 준비했습니다.';
+  const best=[...order].sort((a,b)=>(bids[b.id]||0)-(bids[a.id]||0))[0];
+  $('resultText').textContent=best&&bids[best.id]>0
+    ?`당신은 「${best.title}」에 가장 많은 코인을 투자했어요. 비슷한 취향의 관객이 좋아한 영화들을 골랐습니다.`
+    :'입찰 결과를 바탕으로 개인화 추천 결과를 준비했습니다.';
   const renderCards = () => {
-    const top = recs[0];
-    $('heroRec').innerHTML = `${poster(top)}<div><span class="tag gold">🏆 THE TOP PICK</span><h2>${escapeHtml(top.title)}</h2><p>${escapeHtml(top.genre)}<br>당신의 취향을 위한 첫 번째 상영작</p><div style="margin-top:17px" class="tag">Item-CF 추천</div></div>`;
-    $('resultGrid').innerHTML = recs.map((f,i)=>`<div class="rec-card" style="cursor:pointer" onclick="openMovieModal('${f.id}','${escapeHtml(f.title).replace(/'/g,"\\'")}','${escapeHtml(f.genre)}',${f.score||0},'${f.posterUrl||''}')">${poster(f)}<div class="copy"><div class="rank">NO. ${String(i+1).padStart(2,'0')}</div><b>${escapeHtml(f.title)}</b><small>${escapeHtml(f.genre)}</small></div></div>`).join('');
+    const top=recs[0];
+    $('heroRec').innerHTML=`${poster(top)}<div><span class="tag gold">🏆 THE TOP PICK</span><h2>${escapeHtml(top.title)}</h2><p>${escapeHtml(top.genre)}<br>당신의 취향을 위한 첫 번째 상영작</p><div style="margin-top:17px" class="tag">Item-CF 추천</div></div>`;
+    $('resultGrid').innerHTML=recs.map((f,i)=>`<div class="rec-card" style="cursor:pointer" onclick="openMovieModal('${f.id}','${escapeHtml(f.title).replace(/'/g,"\\'")}','${escapeHtml(f.genre)}',${f.score||0},'${f.posterUrl||''}')">${poster(f)}<div class="copy"><div class="rank">NO. ${String(i+1).padStart(2,'0')}</div><b>${escapeHtml(f.title)}</b><small>${escapeHtml(f.genre)}</small></div></div>`).join('');
   };
   renderCards();
-  enrichWithPosters(recs).then(enriched => { recs = enriched; renderCards(); });
+  enrichWithPosters(recs).then(enriched => { recs=enriched; renderCards(); });
 }
-$('introHost').innerHTML=hostSvg;$('auctionHost').innerHTML=hostSvg;$('refineHost').innerHTML=hostSvg;init();
-</script>
-<!-- 영화 상세 모달 -->
-<div id="movieModal" class="modal-backdrop hide" onclick="closeModal(event)">
-  <div class="modal" id="modalInner">
-    <button class="modal-close" onclick="document.getElementById('movieModal').classList.add('hide')">✕</button>
-    <div id="modalContent"></div>
-  </div>
-</div>
-
-<script>
-async function openMovieModal(movieId, title, genre, score, posterUrl) {
-  const modal = document.getElementById('movieModal');
-  const content = document.getElementById('modalContent');
-  modal.classList.remove('hide');
-
-  // 로딩 상태
-  content.innerHTML = `
-    <div style="padding:60px;text-align:center;color:var(--muted)">
-      <div style="font-size:32px;margin-bottom:12px">🎬</div>
-      <div>불러오는 중...</div>
-    </div>`;
-
-  try {
-    const tmdbId = tmdbLinks[String(movieId)];
-    let overview = '줄거리 정보가 없습니다.';
-    let tmdbRating = null;
-    let genres = genre;
-    let backdrop = null;
-
-    if (tmdbId) {
-      const res = await fetch(
-        `https://api.themoviedb.org/3/movie/${tmdbId}?api_key=${TMDB_KEY}&language=ko-KR`
-      );
-      const data = await res.json();
-      overview  = data.overview || '줄거리 정보가 없습니다.';
-      tmdbRating = data.vote_average ? data.vote_average.toFixed(1) : null;
-      genres    = data.genres?.map(g => g.name).join(' · ') || genre;
-      backdrop  = data.backdrop_path
-        ? `https://image.tmdb.org/t/p/w780${data.backdrop_path}`
-        : (posterUrl || null);
-    }
-
-    const pct = Math.round(score * 1000) / 10;
-    content.innerHTML = `
-      ${backdrop
-        ? `<img class="modal-poster" src="${backdrop}" alt="${escapeHtml(title)}" onerror="this.style.display='none'">`
-        : `<div class="modal-poster-fallback" style="background:linear-gradient(135deg,#2a1a2e,#1a1020)">🎬</div>`
-      }
-      <div class="modal-body">
-        <h2>${escapeHtml(title)}</h2>
-        <div class="modal-meta">
-          ${genres.split(' · ').map(g=>`<span class="tag">${escapeHtml(g)}</span>`).join('')}
-          ${tmdbRating ? `<span class="tag gold">⭐ TMDB ${tmdbRating}</span>` : ''}
-        </div>
-        <p class="modal-overview">${escapeHtml(overview)}</p>
-        <div class="modal-score">
-          🪙 경매 취향 매칭 점수 <strong style="color:#ffd79d">${pct}%</strong>
-          <div style="margin-top:8px;height:6px;background:#3a2a3a;border-radius:9px;overflow:hidden">
-            <div style="width:${Math.min(pct*3,100)}%;height:100%;background:linear-gradient(90deg,#a774dc,#e2b475);border-radius:9px"></div>
-          </div>
-        </div>
-      </div>`;
-  } catch(e) {
-    content.innerHTML = `<div style="padding:40px;text-align:center;color:var(--muted)">정보를 불러오지 못했어요.</div>`;
-  }
-}
-
-function closeModal(e) {
-  if (e.target === document.getElementById('movieModal')) {
-    document.getElementById('movieModal').classList.add('hide');
-  }
-}
-</script>
-<script>
-function saveResult() {
-  const data = {
-    timestamp: new Date().toISOString(),
-    bids: bids,
-    dislike: dislike,
-    rating: rating,
-    selected_movies: order.map(f => ({ id: f.id, title: f.title })),
-    recommendations: recs.map((f, i) => ({
-      rank: i + 1,
-      id: f.id,
-      title: f.title,
-      genre: f.genre,
-      score: f.score
-    }))
-  };
-  const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
-  const url  = URL.createObjectURL(blob);
-  const a    = document.createElement('a');
-  a.href     = url;
-  a.download = `cinema_auction_${new Date().toISOString().slice(0,19).replace(/:/g,'-')}.json`;
-  a.click();
-  URL.revokeObjectURL(url);
-}
-</script>
-<script>
-const SHEET_URL = 'https://script.google.com/macros/s/AKfycbzif396j8CYuxBWZ_LObcglhDFPiEIMGcVUzKV2NyRFT5BUq3GjNqVgU2y8NmgMezrz/exec';
 
 async function saveResult() {
   const btn = event.target;
-  btn.textContent = '저장 중...';
-  btn.disabled = true;
-
+  btn.textContent='저장 중...'; btn.disabled=true;
   const data = {
-    timestamp: new Date().toISOString(),
-    bids: bids,
-    dislike: dislike,
-    rating: rating,
-    selected_movies: order.map(f => ({ id: f.id, title: f.title })),
-    recommendations: recs.map((f, i) => ({
-      rank: i + 1,
-      id: f.id,
-      title: f.title,
-      genre: f.genre,
-      score: f.score
-    }))
+    timestamp: new Date().toISOString(), bids, dislike, rating,
+    selected_movies: order.map(f=>({id:f.id,title:f.title})),
+    recommendations: recs.map((f,i)=>({rank:i+1,id:f.id,title:f.title,genre:f.genre,score:f.score}))
   };
-
   try {
-    await fetch(SHEET_URL, {
-      method: 'POST',
-      mode: 'no-cors',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(data)
-    });
-    btn.textContent = '✓ 저장 완료!';
-    btn.style.background = '#2d5a3d';
-  } catch(e) {
-    btn.textContent = '저장 실패';
-    btn.disabled = false;
-  }
+    await fetch(SHEET_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)});
+    btn.textContent='✓ 저장 완료!'; btn.style.background='#2d5a3d';
+  } catch(e) { btn.textContent='저장 실패'; btn.disabled=false; }
 }
 
 function openMovieModal(movieId, title, genre, score, posterUrl) {
-  const modal = document.getElementById('movieModal');
-  const content = document.getElementById('modalContent');
+  const modal=document.getElementById('movieModal');
+  const content=document.getElementById('modalContent');
   modal.classList.remove('hide');
-
-  content.innerHTML = `
-    <div style="padding:60px;text-align:center;color:var(--muted)">
-      <div style="font-size:32px;margin-bottom:12px">🎬</div>
-      <div>불러오는 중...</div>
-    </div>`;
-
-  const tmdbId = tmdbLinks[String(movieId)];
-  if (!tmdbId) { renderModalFallback(content, title, genre, score, posterUrl); return; }
-
+  content.innerHTML=`<div style="padding:60px;text-align:center;color:var(--muted)"><div style="font-size:32px;margin-bottom:12px">🎬</div><div>불러오는 중...</div></div>`;
+  const tmdbId=tmdbLinks[String(movieId)];
+  if(!tmdbId){renderModalFallback(content,title,genre,score,posterUrl);return;}
   fetch(`https://api.themoviedb.org/3/movie/${tmdbId}?api_key=${TMDB_KEY}&language=ko-KR`)
-    .then(r => r.json())
-    .then(data => {
-      const overview  = data.overview || '줄거리 정보가 없습니다.';
-      const tmdbScore = data.vote_average ? data.vote_average.toFixed(1) : null;
-      const genres    = data.genres?.map(g => g.name).join(' · ') || genre;
-      const backdrop  = data.backdrop_path
-        ? `https://image.tmdb.org/t/p/w780${data.backdrop_path}`
-        : posterUrl || null;
-      const pct = +(score * 100).toFixed(1);
-
-      content.innerHTML = `
-        ${backdrop
-          ? `<img class="modal-poster" src="${backdrop}" alt="${escapeHtml(title)}" onerror="this.style.display='none'">`
-          : `<div class="modal-poster-fallback" style="background:linear-gradient(135deg,#2a1a2e,#1a1020)">🎬</div>`}
+    .then(r=>r.json())
+    .then(data=>{
+      const overview=data.overview||'줄거리 정보가 없습니다.';
+      const tmdbScore=data.vote_average?data.vote_average.toFixed(1):null;
+      const genres=data.genres?.map(g=>g.name).join(' · ')||genre;
+      const backdrop=data.backdrop_path?`https://image.tmdb.org/t/p/w780${data.backdrop_path}`:posterUrl||null;
+      const pct=+(score*100).toFixed(1);
+      content.innerHTML=`
+        ${backdrop?`<img class="modal-poster" src="${backdrop}" alt="${escapeHtml(title)}" onerror="this.style.display='none'">`:
+          `<div class="modal-poster-fallback" style="background:linear-gradient(135deg,#2a1a2e,#1a1020)">🎬</div>`}
         <div class="modal-body">
           <h2>${escapeHtml(title)}</h2>
           <div class="modal-meta">
             ${genres.split(' · ').map(g=>`<span class="tag">${escapeHtml(g)}</span>`).join('')}
-            ${tmdbScore ? `<span class="tag gold">⭐ TMDB ${tmdbScore}</span>` : ''}
+            ${tmdbScore?`<span class="tag gold">⭐ TMDB ${tmdbScore}</span>`:''}
           </div>
           <p class="modal-overview">${escapeHtml(overview)}</p>
           <div class="modal-score">
@@ -417,20 +291,17 @@ function openMovieModal(movieId, title, genre, score, posterUrl) {
           </div>
         </div>`;
     })
-    .catch(() => renderModalFallback(content, title, genre, score, posterUrl));
+    .catch(()=>renderModalFallback(content,title,genre,score,posterUrl));
 }
 
-function renderModalFallback(content, title, genre, score, posterUrl) {
-  const pct = +(score * 100).toFixed(1);
-  content.innerHTML = `
-    ${posterUrl
-      ? `<img class="modal-poster" src="${posterUrl}" alt="${escapeHtml(title)}">`
-      : `<div class="modal-poster-fallback" style="background:linear-gradient(135deg,#2a1a2e,#1a1020)">🎬</div>`}
+function renderModalFallback(content,title,genre,score,posterUrl){
+  const pct=+(score*100).toFixed(1);
+  content.innerHTML=`
+    ${posterUrl?`<img class="modal-poster" src="${posterUrl}" alt="${escapeHtml(title)}">`:
+      `<div class="modal-poster-fallback" style="background:linear-gradient(135deg,#2a1a2e,#1a1020)">🎬</div>`}
     <div class="modal-body">
       <h2>${escapeHtml(title)}</h2>
-      <div class="modal-meta">
-        ${genre.split(' · ').map(g=>`<span class="tag">${escapeHtml(g)}</span>`).join('')}
-      </div>
+      <div class="modal-meta">${genre.split(' · ').map(g=>`<span class="tag">${escapeHtml(g)}</span>`).join('')}</div>
       <div class="modal-score">
         🪙 경매 취향 매칭 점수 <strong style="color:#ffd79d">${pct}%</strong>
         <div style="margin-top:8px;height:6px;background:#3a2a3a;border-radius:9px;overflow:hidden">
@@ -440,19 +311,9 @@ function renderModalFallback(content, title, genre, score, posterUrl) {
     </div>`;
 }
 
-function closeModal(e) {
-  if (e.target === document.getElementById('movieModal')) {
-    document.getElementById('movieModal').classList.add('hide');
-  }
-}
-</script>
+function closeModal(e){if(e.target===document.getElementById('movieModal'))document.getElementById('movieModal').classList.add('hide');}
 
-<!-- 영화 상세 모달 -->
-<div id="movieModal" class="modal-backdrop hide" onclick="closeModal(event)">
-  <div class="modal" id="modalInner">
-    <button class="modal-close" onclick="document.getElementById('movieModal').classList.add('hide')">✕</button>
-    <div id="modalContent"></div>
-  </div>
-</div>
+$('introHost').innerHTML=hostSvg;$('auctionHost').innerHTML=hostSvg;$('refineHost').innerHTML=hostSvg;init();
+</script>
 </body>
 </html>
