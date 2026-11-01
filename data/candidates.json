@@ -106,5 +106,77 @@
     "title": "Apollo 13 (1995)",
     "genre": "Adventure · Drama · IMAX",
     "count": 201
+  },
+  {
+    "id": 1198,
+    "title": "Raiders of the Lost Ark (Indiana Jones and the Raiders of the Lost Ark) (1981)",
+    "genre": "Action · Adventure",
+    "count": 200
+  },
+  {
+    "id": 4993,
+    "title": "Lord of the Rings: The Fellowship of the Ring, The (2001)",
+    "genre": "Adventure · Fantasy",
+    "count": 198
+  },
+  {
+    "id": 1210,
+    "title": "Star Wars: Episode VI - Return of the Jedi (1983)",
+    "genre": "Action · Adventure · Sci-Fi",
+    "count": 196
+  },
+  {
+    "id": 858,
+    "title": "Godfather, The (1972)",
+    "genre": "Crime · Drama",
+    "count": 192
+  },
+  {
+    "id": 457,
+    "title": "Fugitive, The (1993)",
+    "genre": "Thriller",
+    "count": 190
+  },
+  {
+    "id": 592,
+    "title": "Batman (1989)",
+    "genre": "Action · Crime · Thriller",
+    "count": 189
+  },
+  {
+    "id": 2028,
+    "title": "Saving Private Ryan (1998)",
+    "genre": "Action · Drama · War",
+    "count": 188
+  },
+  {
+    "id": 5952,
+    "title": "Lord of the Rings: The Two Towers, The (2002)",
+    "genre": "Adventure · Fantasy",
+    "count": 188
+  },
+  {
+    "id": 7153,
+    "title": "Lord of the Rings: The Return of the King, The (2003)",
+    "genre": "Action · Adventure · Drama · Fantasy",
+    "count": 185
+  },
+  {
+    "id": 588,
+    "title": "Aladdin (1992)",
+    "genre": "Adventure · Animation · Children · Comedy · Musical",
+    "count": 183
+  },
+  {
+    "id": 608,
+    "title": "Fargo (1996)",
+    "genre": "Comedy · Crime · Drama · Thriller",
+    "count": 181
+  },
+  {
+    "id": 2762,
+    "title": "Sixth Sense, The (1999)",
+    "genre": "Drama · Horror · Mystery",
+    "count": 179
   }
 ]

@@ -30,20 +30,19 @@ matrix_dict = {str(uid): {str(mid): float(v) for mid, v in row.items() if v > 0}
 with open('data/ratings_processed.json','w') as f:
     json.dump(matrix_dict, f)
 
-# 3. 온보딩용 후보 영화 선정 (장르별 대표작, 평가 수 많은 순)
-candidate_ids = movie_counts[movie_counts >= 200].index
+# 3. 온보딩용 후보 풀 생성
+candidate_ids = movie_counts[movie_counts >= 100].index  # 100개 이상으로 완화
 candidates = movies[movies['movieId'].isin(candidate_ids)].copy()
 candidates['count'] = candidates['movieId'].map(movie_counts)
 candidates = candidates.sort_values('count', ascending=False)
 
-# 장르별로 최대 3편씩 뽑아 20편 구성
+# 장르별 최대 5편씩, 목표 30편
 genre_bucket = {}
 result = []
 for _, row in candidates.iterrows():
     genres = row['genres'].split('|')
-    added = False
     for g in genres:
-        if genre_bucket.get(g, 0) < 3:
+        if genre_bucket.get(g, 0) < 5:
             genre_bucket[g] = genre_bucket.get(g, 0) + 1
             result.append({
                 'id': int(row['movieId']),
@@ -51,9 +50,8 @@ for _, row in candidates.iterrows():
                 'genre': row['genres'].replace('|', ' · '),
                 'count': int(row['count'])
             })
-            added = True
             break
-    if len(result) >= 24:
+    if len(result) >= 30:
         break
 
 with open('data/candidates.json','w',encoding='utf-8') as f:
@@ -61,4 +59,4 @@ with open('data/candidates.json','w',encoding='utf-8') as f:
 
 print(f"✅ movies.json         — {len(movies_json)}편")
 print(f"✅ ratings_processed   — {len(matrix_dict)}명 유저")
-print(f"✅ candidates.json     — {len(result)}편 후보 영화")
+print(f"✅ candidates.json     — {len(result)}편 후보 풀")

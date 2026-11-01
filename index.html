@@ -145,6 +145,7 @@ async function init() {
         posterUrl: null
       };
     });
+    films = films.sort(() => Math.random() - 0.5);
     // recommender.js 데이터 + TMDB 링크 로드 병렬 실행
     await Promise.all([loadData(), loadTmdbLinks()]);
     // 포스터 백그라운드 로드 (화면 먼저 띄우고 나서)
