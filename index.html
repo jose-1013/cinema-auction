@@ -141,11 +141,17 @@ async function init() {
         title: cleanTitle(f.title),
         genre: f.genre.replace(/\|/g, ' · '),
         icon: s.icon, a: s.a, b: s.b, c: s.c,
-        code: cleanTitle(f.title).toUpperCase().slice(0, 18)
+        code: cleanTitle(f.title).toUpperCase().slice(0, 18),
+        posterUrl: null
       };
     });
-    // recommender.js 데이터 로드
-    await loadData();
+    // recommender.js 데이터 + TMDB 링크 로드 병렬 실행
+    await Promise.all([loadData(), loadTmdbLinks()]);
+    // 포스터 백그라운드 로드 (화면 먼저 띄우고 나서)
+    enrichWithPosters(films).then(enriched => {
+      films = enriched;
+      if(page === 1) renderMovies();
+    });
   } catch(e) {
     console.warn('데이터 로드 실패, 오프라인 모드', e);
   }
@@ -153,7 +159,12 @@ async function init() {
 }
 const $=id=>document.getElementById(id);
 const escapeHtml=s=>String(s).replace(/[&<>"']/g,x=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[x]));
-function poster(f){return `<div class="poster" style="--c1:${f.a};--c2:${f.b};--c3:${f.c}"><span class="poster-glyph">${f.icon}</span><span class="poster-type">${escapeHtml(f.code||f.title)}</span></div>`}
+function poster(f){
+  if(f.posterUrl){
+    return `<div class="poster" style="--c1:${f.a};--c2:${f.b};--c3:${f.c};padding:0;background:none"><img src="${f.posterUrl}" alt="${escapeHtml(f.title)}" style="width:100%;height:100%;object-fit:cover;display:block;border-radius:0"></div>`;
+  }
+  return `<div class="poster" style="--c1:${f.a};--c2:${f.b};--c3:${f.c}"><span class="poster-glyph">${f.icon}</span><span class="poster-type">${escapeHtml(f.code||f.title)}</span></div>`;
+}
 const hostSvg=`<svg viewBox="0 0 330 380" role="img" aria-label="정장을 입고 경매 망치를 든 경매사 일러스트" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="jacket" x1="0" x2="1"><stop stop-color="#211d29"/><stop offset=".48" stop-color="#443344"/><stop offset="1" stop-color="#17131f"/></linearGradient><linearGradient id="podium" x1="0" x2="1"><stop stop-color="#49251f"/><stop offset=".45" stop-color="#854838"/><stop offset="1" stop-color="#361b20"/></linearGradient><linearGradient id="skin" x1="0" x2=".8" y2=".8"><stop stop-color="#efd0b4"/><stop offset="1" stop-color="#c88a73"/></linearGradient></defs><ellipse cx="168" cy="366" rx="147" ry="13" fill="#000" opacity=".36"/><path d="M85 276Q78 207 110 183Q137 167 164 170Q207 164 227 183Q244 211 253 278" fill="url(#jacket)" stroke="#80606b" stroke-width="2"/><path d="M145 174L163 209L181 174L202 198L180 258H143L124 199Z" fill="#f5e9d6"/><path d="M161 206L151 231L163 268L178 232L166 206" fill="#9a485d"/><path d="M146 174L160 210L135 229L112 183" fill="#2a202c"/><path d="M184 174L165 210L193 229L220 185" fill="#2c2330"/><path d="M156 171L160 192L173 192L179 171" fill="url(#skin)"/><ellipse cx="167" cy="116" rx="51" ry="62" fill="url(#skin)"/><path d="M118 122Q100 70 129 42Q157 20 188 36Q227 49 215 105L208 119Q204 73 189 68Q158 90 123 82Z" fill="#261823"/><path d="M124 80Q146 81 170 65Q190 63 204 83" fill="none" stroke="#402532" stroke-width="12" stroke-linecap="round"/><path d="M139 113q10-7 20 0M179 113q9-7 18 0" fill="none" stroke="#5a3b40" stroke-width="3" stroke-linecap="round"/><circle cx="149" cy="114" r="2.6" fill="#2d1e29"/><circle cx="188" cy="114" r="2.6" fill="#2d1e29"/><path d="M170 119l-5 18h8" fill="none" stroke="#b57c6d" stroke-width="2.5"/><path d="M152 146Q168 158 183 144" fill="none" stroke="#9c635d" stroke-width="3" stroke-linecap="round"/><path d="M118 117Q109 109 105 117Q105 129 118 133M214 117Q225 109 228 119Q225 131 213 133" fill="#d59e83"/><path d="M87 197Q69 210 52 166" fill="none" stroke="#392839" stroke-width="28" stroke-linecap="round"/><path d="M51 166L47 122" fill="none" stroke="url(#skin)" stroke-width="21" stroke-linecap="round"/><path d="M43 118Q39 107 44 97Q53 90 61 108L58 121Z" fill="url(#skin)"/><g transform="rotate(-27 48 83)"><rect x="45" y="56" width="9" height="76" rx="4" fill="#9c603b" stroke="#f7ce8c"/><rect x="20" y="44" width="60" height="27" rx="6" fill="#8a5138" stroke="#e3ac72" stroke-width="4"/><path d="M25 48h50" stroke="#ecc794" stroke-width="3"/></g><path d="M228 197Q244 215 252 249" stroke="#3b2c3c" stroke-width="26" stroke-linecap="round"/><path d="M251 247Q257 259 268 254" stroke="url(#skin)" stroke-width="19" stroke-linecap="round"/><rect x="25" y="265" width="284" height="32" rx="5" fill="#a66f50" stroke="#efd0a2" stroke-width="3"/><path d="M37 290H297L285 377H47Z" fill="url(#podium)" stroke="#d2a17a" stroke-width="3"/><path d="M52 301H283L273 365H61Z" fill="#442625" stroke="#8c5a48" stroke-width="2"/><circle cx="168" cy="331" r="25" fill="#78533c" stroke="#ddb574" stroke-width="3"/><path d="M154 333l9 9l18-22" fill="none" stroke="#f6db9d" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M25 270H309" stroke="#f8d4a0" stroke-width="2"/></svg>`;
 function buildNav(){ $('stepNav').innerHTML=steps.map((s,i)=>`<button class="step-pill ${page===i?'active':i<page?'complete':''}" onclick="go(${i})" title="${s}"><span class="dot">${i+1}</span><span>${s}</span></button>`).join('') }
 function go(p){page=Math.max(0,Math.min(5,p));document.querySelectorAll('.view').forEach((el,i)=>el.classList.toggle('show',i===page));buildNav();if(page===1)renderMovies();if(page===2)renderTickets();if(page===3)renderAuction();if(page===4)renderRefine();if(page===5)renderResult();window.scrollTo({top:0,behavior:'smooth'})}
@@ -198,9 +209,13 @@ function renderResult(){
   $('resultText').textContent = best && bids[best.id] > 0
     ? `당신은 「${best.title}」에 가장 많은 코인을 투자했어요. 비슷한 취향의 관객이 좋아한 영화들을 골랐습니다.`
     : '입찰 결과를 바탕으로 개인화 추천 결과를 준비했습니다.';
-  const top = recs[0];
-  $('heroRec').innerHTML = `${poster(top)}<div><span class="tag gold">🏆 THE TOP PICK</span><h2>${escapeHtml(top.title)}</h2><p>${escapeHtml(top.genre)}<br>당신의 취향을 위한 첫 번째 상영작</p><div style="margin-top:17px" class="tag">Item-CF 추천</div></div>`;
-  $('resultGrid').innerHTML = recs.map((f,i)=>`<div class="rec-card">${poster(f)}<div class="copy"><div class="rank">NO. ${String(i+1).padStart(2,'0')}</div><b>${escapeHtml(f.title)}</b><small>${escapeHtml(f.genre)}</small></div></div>`).join('');
+  const renderCards = () => {
+    const top = recs[0];
+    $('heroRec').innerHTML = `${poster(top)}<div><span class="tag gold">🏆 THE TOP PICK</span><h2>${escapeHtml(top.title)}</h2><p>${escapeHtml(top.genre)}<br>당신의 취향을 위한 첫 번째 상영작</p><div style="margin-top:17px" class="tag">Item-CF 추천</div></div>`;
+    $('resultGrid').innerHTML = recs.map((f,i)=>`<div class="rec-card">${poster(f)}<div class="copy"><div class="rank">NO. ${String(i+1).padStart(2,'0')}</div><b>${escapeHtml(f.title)}</b><small>${escapeHtml(f.genre)}</small></div></div>`).join('');
+  };
+  renderCards();
+  enrichWithPosters(recs).then(enriched => { recs = enriched; renderCards(); });
 }
 $('introHost').innerHTML=hostSvg;$('auctionHost').innerHTML=hostSvg;$('refineHost').innerHTML=hostSvg;init();
 </script>
