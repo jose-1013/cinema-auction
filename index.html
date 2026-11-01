@@ -27,6 +27,18 @@ main{max-width:1550px;margin:0 auto;padding:32px clamp(20px,3vw,42px) 70px}.view
 @media(max-width:1270px){.head-steps{gap:3px}.step-pill{font-size:10px;gap:5px}.step-pill .dot{width:20px;height:20px}.movie-grid{grid-template-columns:repeat(4,1fr)}.ticket-row{grid-template-columns:repeat(3,1fr)}.auctioneer{left:27%;width:330px}.speech{left:41%}.board{width:31%}.lot-poster{left:3%;width:175px;height:237px}.bid-workspace{grid-template-columns:1fr}.rec-grid{grid-template-columns:repeat(4,1fr)}}
 @media(max-width:900px){header{height:auto;min-height:70px;flex-wrap:wrap;gap:8px;padding:12px 20px}.head-steps{order:3;width:100%;justify-content:space-around;overflow-x:auto}.step-pill span:last-child{display:none}main{padding:20px 16px 42px}.welcome{grid-template-columns:1fr}.welcome-copy{min-height:450px;padding:56px 30px 25px}.theater-home{min-height:460px}.welcome-figure{width:250px}.movie-grid{grid-template-columns:repeat(3,1fr)}.ticket-row{grid-template-columns:repeat(2,1fr)}.stage-view{height:580px}.auctioneer{left:24%;bottom:80px;width:250px;height:300px}.lot-poster{top:23%;left:4%;width:136px;height:195px}.board{top:auto;bottom:72px;right:3%;width:32%;min-width:224px}.speech{left:36%;top:85px}.refine-grid,.result-top{grid-template-columns:1fr}.rec-grid{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:560px){.brand-name strong{font-size:17px}.head-right .demo-flag{display:none}.section-head{align-items:start;flex-direction:column}.movie-grid{grid-template-columns:repeat(2,1fr)}.ticket-row{grid-template-columns:1fr}.welcome-copy h1{font-size:47px}.welcome-bottom{gap:14px}.welcome-stat strong{font-size:17px}.stage-view{height:610px}.lot-poster{top:105px;left:5%;width:119px;height:174px}.auctioneer{left:22%;height:250px;bottom:218px;width:220px;max-width:70%}.board{bottom:43px;left:5%;right:5%;width:auto;min-width:0;padding:14px}.board-lot{font-size:14px;margin:5px 0}.bid-number{font-size:30px}.bid-row-label{margin-top:9px}.board-title{padding-bottom:6px}.speech{top:82px;left:42%;right:3%;font-size:10px;min-height:0}.floor{height:28px}.floor-lights{bottom:21px}.bid-control{flex-wrap:wrap}.coin-adjust{justify-content:space-between;width:100%}.control-bottom{flex-wrap:wrap}.control-bottom .btn:last-child{flex:1 1 100%}.choice-row{grid-template-columns:1fr}.award{padding:19px;gap:14px}.award .poster{width:110px;flex-basis:110px;height:175px}.award h2{font-size:20px}.rec-grid{grid-template-columns:repeat(2,1fr)}.footer-actions{flex-wrap:wrap}.footer-actions .btn{width:100%}}
+/* Modal */
+.modal-backdrop{position:fixed;inset:0;background:#000a;z-index:200;display:flex;align-items:center;justify-content:center;padding:20px;animation:enter .2s ease}
+.modal{background:linear-gradient(140deg,#1d1626,#15111c);border:1px solid #7a5a6a;border-radius:20px;max-width:560px;width:100%;max-height:88vh;overflow-y:auto;box-shadow:0 40px 80px #0009;position:relative}
+.modal-poster{width:100%;aspect-ratio:2/1;object-fit:cover;object-position:center 20%;border-radius:20px 20px 0 0}
+.modal-poster-fallback{width:100%;aspect-ratio:2/1;display:flex;align-items:center;justify-content:center;font-size:80px;border-radius:20px 20px 0 0}
+.modal-body{padding:24px 28px 28px}
+.modal-body h2{font-family:Georgia,serif;font-size:24px;margin-bottom:6px}
+.modal-meta{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.modal-overview{font-size:13px;color:#c8b8c4;line-height:1.9;margin-top:14px}
+.modal-score{font-size:12px;color:#f0d09a;margin-top:16px;padding-top:14px;border-top:1px solid #ffffff15}
+.modal-close{position:absolute;top:14px;right:14px;background:#000a;border:1px solid #6a4a5a;color:#f0e0f0;border-radius:50%;width:34px;height:34px;display:grid;place-items:center;font-size:18px;z-index:5}
+.modal-close:hover{background:#3a2030}
 </style>
 </head>
 <body>
@@ -77,7 +89,13 @@ main{max-width:1550px;margin:0 auto;padding:32px clamp(20px,3vw,42px) 70px}.view
   <div class="section-head"><div><div class="kicker">SOLD! · YOUR PRIVATE SCREENING</div><h1>당신을 위한 비밀 상영작</h1><p>가상 경매에서 드러난 영화 선호도를 바탕으로 준비한 추천 미리보기입니다.</p></div><span class="tag green">✓ 경매 종료</span></div>
   <div class="result-top"><div class="award" id="heroRec"></div><div class="surface award-note"><span class="tag gold">★ AUCTION SUMMARY</span><div style="margin-top:17px"><strong>당신의 취향이 낙찰되었습니다.</strong></div><p id="resultText">입찰한 영화를 바탕으로 추천할 준비를 마쳤습니다.</p><ul><li>경매 취향 신호 → 추천 모델 입력</li><li>MovieLens 협업 필터링 연결 예정</li><li>아직 본 적 없는 영화 10편 이상 추천</li></ul></div></div>
   <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px"><h2 style="font-size:20px">추천 상영작 10편</h2><span class="tag">SAMPLE RECOMMENDATIONS</span></div><div class="rec-grid" id="resultGrid"></div><p class="footnote">※ 현재 버전은 UI/인터랙션 시연용입니다. 영화, 추천 순위 및 설명은 가상 예시이며 실제 MovieLens 협업 필터링 결과가 아닙니다.</p>
-  <div class="footer-actions"><small>취향은 언제든 다시 경매할 수 있습니다.</small><button class="btn" onclick="restart()">↺ 새로운 경매 시작하기</button></div>
+  <div class="footer-actions">
+    <small>취향은 언제든 다시 경매할 수 있습니다.</small>
+    <div style="display:flex;gap:10px">
+      <button class="btn secondary" onclick="saveResult()">💾 결과 저장</button>
+      <button class="btn" onclick="restart()">↺ 새로운 경매 시작하기</button>
+    </div>
+  </div>
 </section>
 </main>
 <script src="js/recommender.js"></script>
@@ -213,12 +231,228 @@ function renderResult(){
   const renderCards = () => {
     const top = recs[0];
     $('heroRec').innerHTML = `${poster(top)}<div><span class="tag gold">🏆 THE TOP PICK</span><h2>${escapeHtml(top.title)}</h2><p>${escapeHtml(top.genre)}<br>당신의 취향을 위한 첫 번째 상영작</p><div style="margin-top:17px" class="tag">Item-CF 추천</div></div>`;
-    $('resultGrid').innerHTML = recs.map((f,i)=>`<div class="rec-card">${poster(f)}<div class="copy"><div class="rank">NO. ${String(i+1).padStart(2,'0')}</div><b>${escapeHtml(f.title)}</b><small>${escapeHtml(f.genre)}</small></div></div>`).join('');
+    $('resultGrid').innerHTML = recs.map((f,i)=>`<div class="rec-card" style="cursor:pointer" onclick="openMovieModal('${f.id}','${escapeHtml(f.title).replace(/'/g,"\\'")}','${escapeHtml(f.genre)}',${f.score||0},'${f.posterUrl||''}')">${poster(f)}<div class="copy"><div class="rank">NO. ${String(i+1).padStart(2,'0')}</div><b>${escapeHtml(f.title)}</b><small>${escapeHtml(f.genre)}</small></div></div>`).join('');
   };
   renderCards();
   enrichWithPosters(recs).then(enriched => { recs = enriched; renderCards(); });
 }
 $('introHost').innerHTML=hostSvg;$('auctionHost').innerHTML=hostSvg;$('refineHost').innerHTML=hostSvg;init();
 </script>
+<!-- 영화 상세 모달 -->
+<div id="movieModal" class="modal-backdrop hide" onclick="closeModal(event)">
+  <div class="modal" id="modalInner">
+    <button class="modal-close" onclick="document.getElementById('movieModal').classList.add('hide')">✕</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<script>
+async function openMovieModal(movieId, title, genre, score, posterUrl) {
+  const modal = document.getElementById('movieModal');
+  const content = document.getElementById('modalContent');
+  modal.classList.remove('hide');
+
+  // 로딩 상태
+  content.innerHTML = `
+    <div style="padding:60px;text-align:center;color:var(--muted)">
+      <div style="font-size:32px;margin-bottom:12px">🎬</div>
+      <div>불러오는 중...</div>
+    </div>`;
+
+  try {
+    const tmdbId = tmdbLinks[String(movieId)];
+    let overview = '줄거리 정보가 없습니다.';
+    let tmdbRating = null;
+    let genres = genre;
+    let backdrop = null;
+
+    if (tmdbId) {
+      const res = await fetch(
+        `https://api.themoviedb.org/3/movie/${tmdbId}?api_key=${TMDB_KEY}&language=ko-KR`
+      );
+      const data = await res.json();
+      overview  = data.overview || '줄거리 정보가 없습니다.';
+      tmdbRating = data.vote_average ? data.vote_average.toFixed(1) : null;
+      genres    = data.genres?.map(g => g.name).join(' · ') || genre;
+      backdrop  = data.backdrop_path
+        ? `https://image.tmdb.org/t/p/w780${data.backdrop_path}`
+        : (posterUrl || null);
+    }
+
+    const pct = Math.round(score * 1000) / 10;
+    content.innerHTML = `
+      ${backdrop
+        ? `<img class="modal-poster" src="${backdrop}" alt="${escapeHtml(title)}" onerror="this.style.display='none'">`
+        : `<div class="modal-poster-fallback" style="background:linear-gradient(135deg,#2a1a2e,#1a1020)">🎬</div>`
+      }
+      <div class="modal-body">
+        <h2>${escapeHtml(title)}</h2>
+        <div class="modal-meta">
+          ${genres.split(' · ').map(g=>`<span class="tag">${escapeHtml(g)}</span>`).join('')}
+          ${tmdbRating ? `<span class="tag gold">⭐ TMDB ${tmdbRating}</span>` : ''}
+        </div>
+        <p class="modal-overview">${escapeHtml(overview)}</p>
+        <div class="modal-score">
+          🪙 경매 취향 매칭 점수 <strong style="color:#ffd79d">${pct}%</strong>
+          <div style="margin-top:8px;height:6px;background:#3a2a3a;border-radius:9px;overflow:hidden">
+            <div style="width:${Math.min(pct*3,100)}%;height:100%;background:linear-gradient(90deg,#a774dc,#e2b475);border-radius:9px"></div>
+          </div>
+        </div>
+      </div>`;
+  } catch(e) {
+    content.innerHTML = `<div style="padding:40px;text-align:center;color:var(--muted)">정보를 불러오지 못했어요.</div>`;
+  }
+}
+
+function closeModal(e) {
+  if (e.target === document.getElementById('movieModal')) {
+    document.getElementById('movieModal').classList.add('hide');
+  }
+}
+</script>
+<script>
+function saveResult() {
+  const data = {
+    timestamp: new Date().toISOString(),
+    bids: bids,
+    dislike: dislike,
+    rating: rating,
+    selected_movies: order.map(f => ({ id: f.id, title: f.title })),
+    recommendations: recs.map((f, i) => ({
+      rank: i + 1,
+      id: f.id,
+      title: f.title,
+      genre: f.genre,
+      score: f.score
+    }))
+  };
+  const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+  const url  = URL.createObjectURL(blob);
+  const a    = document.createElement('a');
+  a.href     = url;
+  a.download = `cinema_auction_${new Date().toISOString().slice(0,19).replace(/:/g,'-')}.json`;
+  a.click();
+  URL.revokeObjectURL(url);
+}
+</script>
+<script>
+const SHEET_URL = 'https://script.google.com/macros/s/AKfycbzif396j8CYuxBWZ_LObcglhDFPiEIMGcVUzKV2NyRFT5BUq3GjNqVgU2y8NmgMezrz/exec';
+
+async function saveResult() {
+  const btn = event.target;
+  btn.textContent = '저장 중...';
+  btn.disabled = true;
+
+  const data = {
+    timestamp: new Date().toISOString(),
+    bids: bids,
+    dislike: dislike,
+    rating: rating,
+    selected_movies: order.map(f => ({ id: f.id, title: f.title })),
+    recommendations: recs.map((f, i) => ({
+      rank: i + 1,
+      id: f.id,
+      title: f.title,
+      genre: f.genre,
+      score: f.score
+    }))
+  };
+
+  try {
+    await fetch(SHEET_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    });
+    btn.textContent = '✓ 저장 완료!';
+    btn.style.background = '#2d5a3d';
+  } catch(e) {
+    btn.textContent = '저장 실패';
+    btn.disabled = false;
+  }
+}
+
+function openMovieModal(movieId, title, genre, score, posterUrl) {
+  const modal = document.getElementById('movieModal');
+  const content = document.getElementById('modalContent');
+  modal.classList.remove('hide');
+
+  content.innerHTML = `
+    <div style="padding:60px;text-align:center;color:var(--muted)">
+      <div style="font-size:32px;margin-bottom:12px">🎬</div>
+      <div>불러오는 중...</div>
+    </div>`;
+
+  const tmdbId = tmdbLinks[String(movieId)];
+  if (!tmdbId) { renderModalFallback(content, title, genre, score, posterUrl); return; }
+
+  fetch(`https://api.themoviedb.org/3/movie/${tmdbId}?api_key=${TMDB_KEY}&language=ko-KR`)
+    .then(r => r.json())
+    .then(data => {
+      const overview  = data.overview || '줄거리 정보가 없습니다.';
+      const tmdbScore = data.vote_average ? data.vote_average.toFixed(1) : null;
+      const genres    = data.genres?.map(g => g.name).join(' · ') || genre;
+      const backdrop  = data.backdrop_path
+        ? `https://image.tmdb.org/t/p/w780${data.backdrop_path}`
+        : posterUrl || null;
+      const pct = +(score * 100).toFixed(1);
+
+      content.innerHTML = `
+        ${backdrop
+          ? `<img class="modal-poster" src="${backdrop}" alt="${escapeHtml(title)}" onerror="this.style.display='none'">`
+          : `<div class="modal-poster-fallback" style="background:linear-gradient(135deg,#2a1a2e,#1a1020)">🎬</div>`}
+        <div class="modal-body">
+          <h2>${escapeHtml(title)}</h2>
+          <div class="modal-meta">
+            ${genres.split(' · ').map(g=>`<span class="tag">${escapeHtml(g)}</span>`).join('')}
+            ${tmdbScore ? `<span class="tag gold">⭐ TMDB ${tmdbScore}</span>` : ''}
+          </div>
+          <p class="modal-overview">${escapeHtml(overview)}</p>
+          <div class="modal-score">
+            🪙 경매 취향 매칭 점수 <strong style="color:#ffd79d">${pct}%</strong>
+            <div style="margin-top:8px;height:6px;background:#3a2a3a;border-radius:9px;overflow:hidden">
+              <div style="width:${Math.min(pct*3,100)}%;height:100%;background:linear-gradient(90deg,#a774dc,#e2b475);border-radius:9px"></div>
+            </div>
+          </div>
+        </div>`;
+    })
+    .catch(() => renderModalFallback(content, title, genre, score, posterUrl));
+}
+
+function renderModalFallback(content, title, genre, score, posterUrl) {
+  const pct = +(score * 100).toFixed(1);
+  content.innerHTML = `
+    ${posterUrl
+      ? `<img class="modal-poster" src="${posterUrl}" alt="${escapeHtml(title)}">`
+      : `<div class="modal-poster-fallback" style="background:linear-gradient(135deg,#2a1a2e,#1a1020)">🎬</div>`}
+    <div class="modal-body">
+      <h2>${escapeHtml(title)}</h2>
+      <div class="modal-meta">
+        ${genre.split(' · ').map(g=>`<span class="tag">${escapeHtml(g)}</span>`).join('')}
+      </div>
+      <div class="modal-score">
+        🪙 경매 취향 매칭 점수 <strong style="color:#ffd79d">${pct}%</strong>
+        <div style="margin-top:8px;height:6px;background:#3a2a3a;border-radius:9px;overflow:hidden">
+          <div style="width:${Math.min(pct*3,100)}%;height:100%;background:linear-gradient(90deg,#a774dc,#e2b475);border-radius:9px"></div>
+        </div>
+      </div>
+    </div>`;
+}
+
+function closeModal(e) {
+  if (e.target === document.getElementById('movieModal')) {
+    document.getElementById('movieModal').classList.add('hide');
+  }
+}
+</script>
+
+<!-- 영화 상세 모달 -->
+<div id="movieModal" class="modal-backdrop hide" onclick="closeModal(event)">
+  <div class="modal" id="modalInner">
+    <button class="modal-close" onclick="document.getElementById('movieModal').classList.add('hide')">✕</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
 </body>
 </html>
