@@ -187,7 +187,7 @@ function renderRefine(){const choices=order.slice(0,2);$('dislikeChoices').inner
 function setDislike(id){dislike=dislike===id?'':id;renderRefine()}function setRating(r){rating=r;renderRefine()}
 function renderResult(){
   // Item-CF 추천 실행
-  const recRaw = recommend(bids, 15);
+  const recRaw = recommend(bids, 15, dislike, rating);
   recs = recRaw.map(m => {
     const s = getStyle(m.genres || m.genre || '');
     return {
