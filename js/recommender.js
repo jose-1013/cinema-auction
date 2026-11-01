@@ -74,3 +74,33 @@ function recommend(bids, topN = 15) {
     })
     .filter(Boolean);
 }
+
+// TMDB 포스터 연동
+const TMDB_KEY = '89bbb8ace3f13ba901fe796d93a01f16';
+const TMDB_BASE = 'https://image.tmdb.org/t/p/w300';
+let tmdbLinks = {};
+
+async function loadTmdbLinks() {
+  const res = await fetch('data/tmdb_links.json');
+  tmdbLinks = await res.json();
+}
+
+async function fetchPoster(movieId) {
+  const tmdbId = tmdbLinks[String(movieId)];
+  if (!tmdbId) return null;
+  try {
+    const res = await fetch(
+      `https://api.themoviedb.org/3/movie/${tmdbId}?api_key=${TMDB_KEY}&language=ko-KR`
+    );
+    const data = await res.json();
+    return data.poster_path ? TMDB_BASE + data.poster_path : null;
+  } catch { return null; }
+}
+
+async function enrichWithPosters(filmList) {
+  await loadTmdbLinks();
+  return Promise.all(filmList.map(async f => {
+    const url = await fetchPoster(f.id);
+    return { ...f, posterUrl: url };
+  }));
+}
